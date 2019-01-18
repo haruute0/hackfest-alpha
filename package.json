@@ -1,0 +1,10 @@
+{
+  "name": "hackfest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "css-ripple-effect": "^1.0.5"
+  }
+}

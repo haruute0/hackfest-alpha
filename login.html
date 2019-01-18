@@ -1,0 +1,79 @@
+<!--
+    login.html
+    Halaman Login Hackfest 2019
+    SI IFEST#7 2019
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Page Title</title>
+
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+    </head>
+
+    <body>
+
+        <section class="login">
+            <div class="page-title">
+                Hackfest
+            </div>
+            <div class="page">
+                <div class="login-title">Halaman Login Area Peserta Hackfest 2019</div>
+                <div class="sub-login-title">Informatics Festival #7</div>
+            </div>
+            <div class="login-box">
+                <form class="form-horizontal">
+                    <!-- Username input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Username">Email</label>  
+                        <div class="col-md-4">
+                        <input id="Username" name="Username" type="text" placeholder="Email" class="form-control input-md" required="">
+                        <span class="help-block">Masukkan Email yang digunakan saat registrasi</span>  
+                        </div>
+                    </div>
+                    
+                    <!-- Password input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="password">Password</label>
+                        <div class="col-md-4">
+                        <input id="password" name="password" type="password" placeholder="Password" class="form-control input-md" required="">
+                        
+                        </div>
+                    </div>
+                    
+                    <!-- Remember Me Checkboxes -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="remember-me"></label>
+                        <div class="col-md-4">
+                        <div class="checkbox">
+                        <label for="remember-me-0">
+                            <input type="checkbox" name="remember-me" id="remember-me-0" value="1">
+                            Remember Me?
+                        </label>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Login Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 contro   l-label" for="login"></label>
+                        <div class="col-md-4">
+                        <button id="login" name="login" class="btn btn-default">Let me in!</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </body>
+
+</html>
