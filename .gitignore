@@ -1,1 +1,5 @@
 node_modules
+
+# Ignore Post Generated CSS by Koala.
+css/module/*.css
+css/module/*.css.map

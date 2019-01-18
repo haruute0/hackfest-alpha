@@ -1,47 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 *, *:before, *:after{
-  box-sizing: border-box;
-  margin: 0; padding: 0;
+    box-sizing: border-box;
+    margin: 0; padding: 0;
 }
 
 section{
-  width: 30%;
-  margin: 15% auto;
-  background: #f2f2f2;
-  padding: 5%;
+    width: 30%;
+    margin: 15% auto;
+    background: #f2f2f2;
+    padding: 5%;
 }
 
-button{
-  border: 3px solid #222;
-  background: transparent;
-  overflow: hidden;
-  width: 100%;
-  outline: none;
+.g-like-button{
+    border: 3px solid #222;
+    background: transparent;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
   
   span{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5em;
+    text-align: center;
     color: #222;
     
     display: block; 
     user-select: none;
     position: relative;
     overflow: hidden;
-    padding: 20px;
+    padding: 20px 50px;
     
     &:hover{cursor: pointer;}
   }
 }
 
 .circle{
-  display: block; 
-  position: absolute;
-  background: rgba(0,0,0,.075);
-  border-radius: 50%;
-  transform: scale(0);
+    display: block; 
+    position: absolute;
+    background: rgba(0,0,0,.075);
+    border-radius: 50%;
+    transform: scale(0);
   
   &.animate{animation: effect 0.65s linear;}
 }
