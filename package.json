@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "css-ripple-effect": "^1.0.5",
-    "hover.css": "^2.3.2"
+    "hover.css": "^2.3.2",
+    "normalize.css": "^8.0.1"
   }
 }

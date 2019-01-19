@@ -1,0 +1,19 @@
+/* 
+    
+slider.scss
+Slider Stylesheet File 
+contains:
+    1. main
+    2. normalize
+
+*/
+
+@import "../main.scss";
+@import "../normalize";
+
+/* Slider Stylesheet File */
+
+.slider {
+    min-height: 100vh;
+    background-color: cadetblue;
+}
