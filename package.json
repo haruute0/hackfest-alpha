@@ -5,6 +5,9 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
+    "@material/button": "^0.43.0",
+    "@material/ripple": "^0.43.0",
+    "bulma-timeline": "^3.0.0",
     "css-ripple-effect": "^1.0.5",
     "hover.css": "^2.3.2",
     "normalize.css": "^8.0.1"

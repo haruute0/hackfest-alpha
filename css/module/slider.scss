@@ -17,3 +17,17 @@ contains:
     min-height: 100vh;
     background-color: cadetblue;
 }
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.fstbox, .sndbox, .trdbox{
+    position: relative;
+    height: 400px;
+    width: 270px;
+    background-color: burlywood;
+    border-radius: 25px;
+    margin: 20px 30px;
+}
