@@ -10,8 +10,64 @@
         <link rel="canonical" href="https://ifest-uajy.com/hackfest">
         
         <!-- Use noscript tag to prevent javascript being blocked. -->
-        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <noscript>
+            <div class="noscript--title">
+                JavaScript nonaktif di browser anda.
+            </div>
+            <div class="noscript--subtitle">
+                Dihimbau untuk mengaktifkan JavaScript untuk pengalaman browsing yang maksimal.
+            </div>
+        </noscript>
+
+        <!-- Outdated Browser Fancy Warning -->
+        <link rel="stylesheet" href="node_modules/outdatedbrowser/outdatedbrowser/outdatedbrowser.min.css">
+        <script src="node_modules/outdatedbrowser/outdatedbrowser/outdatedbrowser.min.js"></script>
+
+        <!-- JQuery Module
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        -->
         
     </head>
+
+    <body>
+
+        Hello You!
+
+        <!-- Outdated Browser Element -->    
+        <div id="outdated"></div>
+
+        <!-- Outdated Browser Script -->
+        <script>
+            // Plain Javascript
+            //event listener: DOM ready
+            function addLoadEvent(func) {
+                var oldonload = window.onload;
+                if (typeof window.onload != 'function') {
+                    window.onload = func;
+                } else {
+                    window.onload = function() {
+                        if (oldonload) {
+                            oldonload();
+                        }
+                        func();
+                    }
+                }
+            }
+            //call plugin function after DOM ready
+            addLoadEvent(function(){
+                outdatedBrowser({
+                    bgColor: '#f25648',
+                    color: '#ffffff',
+                    lowerThan: 'transform',
+                    languagePath: '/node_modules/outdatedbrowser/outdatedbrowser/lang/id.html'
+                })
+            });
+        </script>
+
+    </body>
 
 </html>
