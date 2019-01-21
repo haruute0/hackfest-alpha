@@ -6,8 +6,7 @@
   "scripts": {
     "build-css": "node-sass scss/ -o css/",
     "netlify-deploy": "yarn run build-css",
-    "remove-old-build": "rm -rf css/",
-    "grunt": "grunt"
+    "remove-old-build": "rm -rf css/"
   },
   "private": true,
   "dependencies": {
