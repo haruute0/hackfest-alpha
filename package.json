@@ -5,7 +5,8 @@
   "license": "ISC",
   "scripts": {
     "build-css": "node-sass css/ -o css/",
-    "netlify-deploy": "yarn run build-css"
+    "netlify-deploy": "yarn run build-css",
+    "remove-old-build": "rm css/**/*.css"
   },
   "private": true,
   "dependencies": {
