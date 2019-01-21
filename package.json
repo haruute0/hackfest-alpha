@@ -4,18 +4,19 @@
   "main": "index.js",
   "license": "ISC",
   "scripts": {
-    "build-css": "node-sass css/ -o css/",
+    "build-css": "node-sass scss/ -o css/",
     "netlify-deploy": "yarn run build-css",
-    "remove-old-build": "rm css/**/*.css"
+    "remove-old-build": "rm -rf css/",
+    "grunt": "grunt"
   },
   "private": true,
   "dependencies": {
     "@material/button": "^0.43.0",
     "@material/ripple": "^0.43.0",
-    "bulma-timeline": "^3.0.0",
-    "css-ripple-effect": "^1.0.5",
-    "hover.css": "^2.3.2",
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
