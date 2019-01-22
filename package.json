@@ -5,10 +5,11 @@
   "license": "ISC",
   "scripts": {
     "css-build": "node-sass --omit-source-map-url scss/ -o css/",
+    "css-build-minify": "node-sass --omit-source-map-url scss/ -o css/ --output-style compressed",
     "css-watch": "yarn run css-build -- --watch",
     "start": "yarn run css-watch",
     "delete-cache": "rm -rf css/",
-    "netlify-deploy": "yarn run css-build"
+    "netlify-deploy": "yarn run css-build-minify"
   },
   "private": true,
   "dependencies": {
