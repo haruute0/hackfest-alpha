@@ -8,7 +8,7 @@
 $green: #2CA451;
 $light-blue: #FFF; //#C2E4EA;
 $dark-gray: #343739;
-$dim-red: #844B56;
+$dim-red: rgb(0, 151, 126);
 $dark-khaki: #9BAB44;
 
 // Update Bulma's global variables
@@ -70,6 +70,19 @@ $section-subtitle: 'Bitter', serif;
     margin: 25px auto;
     text-align: center;
     padding: 25px;
+}
+
+.contact {
+    background-color: #000;
+}
+
+.footer-w{
+    background-color: #000;
+    color: #FFF;
+
+    strong {
+        color: rgb(161, 161, 161);
+    }
 }
 
 
