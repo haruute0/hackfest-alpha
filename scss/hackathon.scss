@@ -88,18 +88,14 @@ $section-subtitle: 'Bitter', serif;
 }
 
 .column-w {
+
+    @media (min-width: 768px) {
+        &--left{
+            margin-right: 30px;
+        }
     
-    &--left{
-        margin-right: 30px;
-    }
-
-    &--right{
-        margin-left: 30px;
-    }
-
-    @media (min-width: 576px) {
-        &--right, &--left{
-            margin: 0;
+        &--right{
+            margin-left: 30px;
         }
     }
 
