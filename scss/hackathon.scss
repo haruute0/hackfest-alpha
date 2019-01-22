@@ -1,8 +1,11 @@
 @charset "utf-8";
 
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Bitter|Staatliches');
+
 // Set your brand colors
 $green: #2CA451;
-$light-blue: #C2E4EA;
+$light-blue: #FFF; //#C2E4EA;
 $dark-gray: #343739;
 $dim-red: #844B56;
 $dark-khaki: #9BAB44;
@@ -23,3 +26,43 @@ $body-background-color: $light-blue;
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+
+// Material Design Button
+@import "../node_modules/@material/ripple/dist/mdc.ripple.min";
+@import "../node_modules/@material/button/dist/mdc.button";
+
+// Additional custom css
+
+$section-title :'Staatliches', cursive;
+$section-subtitle: 'Bitter', serif;
+
+
+.button-download-rulebook {
+    margin: 20px 20px;
+    margin-left: 0;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.button-text-data {
+    margin: auto 5px;
+}
+
+.button-icon {
+    margin: auto 5px;
+    font-size: 1.5em;
+}
+
+.syarat-ketentuan {
+
+    .items {
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin: 5px auto;
+            font-size: 1.25em;
+
+        }
+    }
+}
