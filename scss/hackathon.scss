@@ -21,17 +21,6 @@ $fullhd-enabled: false;
 // Update some of Bulma component variables
 $body-background-color: $light-blue;
 
-// Import only what you need from Bulma
-@import "../node_modules/bulma/sass/utilities/_all.sass";
-@import "../node_modules/bulma/sass/base/_all.sass";
-@import "../node_modules/bulma/sass/elements/container.sass";
-@import "../node_modules/bulma/sass/elements/title.sass";
-@import "../node_modules/bulma/sass/layout/section.sass";
-
-// Material Design Button
-@import "../node_modules/@material/ripple/dist/mdc.ripple.min";
-@import "../node_modules/@material/button/dist/mdc.button";
-
 // Additional custom css
 
 $section-title :'Staatliches', cursive;
@@ -67,3 +56,24 @@ $section-subtitle: 'Bitter', serif;
         }
     }
 }
+
+.hadiah-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-hadiah {
+    height: 400px;
+    width: 270px;
+    background-color: $green;
+    border-radius: 25px;
+    margin: 25px auto;
+    text-align: center;
+    padding: 25px;
+}
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";
+// Material Design Button
+@import "../node_modules/@material/ripple/dist/mdc.ripple.min";
+@import "../node_modules/@material/button/dist/mdc.button";
