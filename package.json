@@ -9,8 +9,9 @@
     "css-watch": "yarn run css-build -- --watch",
     "start": "yarn run css-watch",
     "delete-cache": "rm -rf css/",
-    "netlify-deploy": "yarn run css-build-minify && yarn run unch",
-    "unch": "grunt"
+    "netlify-deploy": "yarn run css-build-minify && yarn run unch && yarn run compress",
+    "unch": "grunt",
+    "compress": "grunt imagemin"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +25,8 @@
     "grunt": "^1.0.3",
     "grunt-cli": "^1.3.2",
     "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-uncss": "^0.8.5"
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-uncss": "^0.8.5",
+    "imagemin-mozjpeg": "^8.0.0"
   }
 }
