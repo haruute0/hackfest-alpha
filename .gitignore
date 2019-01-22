@@ -2,5 +2,3 @@ node_modules
 
 # Ignore Post Generated CSS.
 css/
-
-cleancss/

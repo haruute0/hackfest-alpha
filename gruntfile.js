@@ -4,14 +4,14 @@ module.exports = function (grunt) {
         uncss: {
             dist: {
                 files: [
-                    { src: 'index.html', dest: 'cleancss/tidy.css' }
+                    { src: 'index.html', dest: 'css/hackathon.css' }
                 ]
             }
         },
         cssmin: {
             dist: {
                 files: [
-                    { src: 'cleancss/tidy.css', dest: 'cleancss/tidy.css' }
+                    { src: 'css/hackathon.css', dest: 'css/hackathon.css' }
                 ]
             }
         }
