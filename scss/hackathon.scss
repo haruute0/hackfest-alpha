@@ -97,6 +97,12 @@ $section-subtitle: 'Bitter', serif;
         margin-left: 30px;
     }
 
+    @media (min-width: 576px) {
+        &--right, &--left{
+            margin: 0;
+        }
+    }
+
     h1 {
         margin-bottom: 20px;
         color: rgb(0, 100, 250);
