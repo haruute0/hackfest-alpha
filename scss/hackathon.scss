@@ -59,23 +59,72 @@ $section-subtitle: 'Bitter', serif;
     }
 }
 
+.hadiah {
+    background-color: #0d0b13;
+
+    .section-title {
+        margin-bottom: 40px;
+
+        p {
+            color: #a1a1af;
+        }
+
+        h1 {
+            color: white;
+        }
+    }
+    
+}
+
 .hadiah-box {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+        
+    .box-hadiah {
+        height: 400px;
+        width: 270px;
+        background-color: #17141d;
+        color: #a1a1af;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        margin: 25px;
+        text-align: center;
+        padding: 25px;
+        transition: 0.3s;
+
+    }
+
+    .box-hadiah:hover {
+
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    .hadiah-trophy {
+        height: 200px;
+        margin: 0 0 20px 0;
+    }
+
+    .juara {
+        font-size: 2em;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .nominal {
+        font-size: 1.5em;
+    }
+
+    .sertif {
+        font-weight: bold;
+    }
 }
 
-.box-hadiah {
-    height: 400px;
-    width: 270px;
-    background-color: $green;
-    border-radius: 25px;
-    margin: 25px auto;
-    text-align: center;
-    padding: 25px;
-}
 
 .contact {
-    background-color: #000000;
+    background-color: black;
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300203e' fill-opacity='0.38'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -204,7 +253,7 @@ $section-subtitle: 'Bitter', serif;
 }
 
 .about {
-    background: url(../images/daan-stevens-282446-unsplash.jpg) center center fixed;
+    background: url(../images-raw/daan-stevens-282446-unsplash.jpg) center center fixed;
     background-size: cover;
     min-height: 100vh;
     color: #F0F0F0;
