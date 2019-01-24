@@ -95,5 +95,6 @@ require('load-grunt-tasks')(grunt);
 
     // Default tasks.
     grunt.registerTask('default', ['browserSync', 'watch']);
+    grunt.registerTask('build', ['sass', 'uncss', 'cssmin', 'imagemin'])
 
 };

@@ -9,7 +9,7 @@
     "css-watch": "yarn run css-build -- --watch",
     "start": "yarn run css-watch",
     "delete-cache": "rm -rf css/",
-    "netlify-deploy": "yarn run css-build-minify && yarn run unch",
+    "netlify-deploy": "grunt build",
     "unch": "grunt",
     "compress": "grunt imagemin"
   },
