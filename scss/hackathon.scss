@@ -28,6 +28,15 @@ $body-background-color: $light-blue;
 $section-title :'Staatliches', cursive;
 $section-subtitle: 'Bitter', serif;
 
+@font-face {
+    font-family: 'hackedregular';
+    src: url('../hacked-webfont.woff2') format('woff2'),
+         url('../hacked-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .syarat-ketentuan-download {
     @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
@@ -341,6 +350,45 @@ button:hover {
         margin-bottom: 20px;
         color: rgb(0, 100, 250);
     }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Teko');
+
+.hackathon-title {
+
+    margin: 0;
+    padding: 0;
+
+    .hackathon {
+        font-family: 'hackedregular';
+        font-size: 15.5vw;
+        font-style: italic;
+        line-height: 0.6;
+        text-align: center;
+        color: #EF233C;
+    }
+
+    .uajy {
+        font-family: 'Teko', sans-serif;
+        font-size: 8vw;
+        letter-spacing: 10px;
+        font-style: italic;
+        text-align: center;
+        color: #f8f8f8;
+    }
+
+    .ifest {
+        font-family: 'Teko', sans-serif;
+        font-size: 5vw;
+        text-align: center;
+        text-indent: 3rem;
+        color: #f8f8f8;
+    }
+}
+
+.hero-here {
+    background-color: #000;
+    min-height: 100vh;
 }
 
 // Import only what you need from Bulma

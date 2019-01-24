@@ -1,0 +1,6 @@
+[submodule "js/jquery-glow"]
+	path = js/jquery-glow
+	url = git@github.com:nakajima/jquery-glow.git
+[submodule "js/novacancy.js"]
+	path = js/novacancy.js
+	url = git@github.com:chuckyglitch/novacancy.js.git

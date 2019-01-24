@@ -43,14 +43,32 @@
         <link rel="stylesheet" type="text/css" href="css/hackathon.css">
 
         <!-- JavaScript for the website, ensure better experience -->
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/novacancy.js/javascript/jquery.novacancy.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.hackathon').novacancy({
+                    'blink': 2,
+                    'off': 1,
+                    'color': 'Red',
+                    'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
+                });
+            });
+        </script>
+
     </head>
 
     <body>
 
-        <section class="section">
+        <section class="section hero-here">
             <div class="container">
-                <h1 class="title">UAJY Siloam Hackathon</h1>
-                <p class="subtitle is-4">INFORMATICS FESTIFAL #7</p>
+                
+                <div class="hackathon-title">
+                        <h1 class="uajy">UAJY SILOAM</h1>
+                        <p class="hackathon">HACKATHON</p>
+                        <p class="ifest">INFORMATICS FESTIVAL #7</p>
+                    </div>
                 <p>
                     Checklist: 
                     <ul>
