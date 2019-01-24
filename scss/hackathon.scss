@@ -9,7 +9,6 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/brands.css');
 
-
 // Set your brand colors
 $green: #2CA451;
 $light-blue: #FFF; //#C2E4EA;
@@ -33,12 +32,17 @@ $section-subtitle: 'Bitter', serif;
 
 // Custom font-face
 @font-face {
-    font-family: 'hackedregular';
-    src: url('../fonts/hacked-webfont.woff2') format('woff2'),
-        url('../fonts/hacked-webfont.woff') format('woff');
+    font-family: 'minecrafterregular';
+    src: url('../fonts/minecrafter.reg-webfont.woff2') format('woff2'),
+         url('../fonts/minecrafter.reg-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
+}
+
+@font-face {
+	font-family: 'AGENCYB';
+	src: url('../fonts/AGENCYB.woff') format('woff');
 }
 
 .syarat-ketentuan-download {
@@ -365,8 +369,8 @@ $section-subtitle: 'Bitter', serif;
     padding: 0;
 
     .hackathon {
-        font-family: 'hackedregular';
-        font-size: 15.5vw;
+        font-family: 'minecrafterregular';
+        font-size: 10.5vw;
         font-style: italic;
         line-height: 0.6;
         text-align: center;
@@ -374,7 +378,9 @@ $section-subtitle: 'Bitter', serif;
     }
 
     .uajy {
-        font-family: 'Teko', sans-serif;
+        font-family: 'AGENCYB', sans-serif;
+        font-style: normal;
+        font-weight: 700;      
         font-size: 8vw;
         letter-spacing: 10px;
         font-style: italic;
@@ -383,7 +389,9 @@ $section-subtitle: 'Bitter', serif;
     }
 
     .ifest {
-        font-family: 'Teko', sans-serif;
+        font-family: 'AGENCYB', sans-serif;
+        font-style: italic;
+        font-weight: normal;
         font-size: 5vw;
         text-align: center;
         text-indent: 3rem;
