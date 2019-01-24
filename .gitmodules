@@ -1,3 +1,6 @@
 [submodule "js/novacancy.js"]
 	path = js/novacancy.js
 	url = https://github.com/chuckyglitch/novacancy.js.git
+[submodule "js/vertical-timeline"]
+	path = js/vertical-timeline
+	url = https://github.com/RyanFitzgerald/vertical-timeline.git
