@@ -1,0 +1,40 @@
+.hackathon-title {
+
+    margin: 0;
+    padding: 0;
+
+    .hackathon {
+        font-family: 'minecrafterregular';
+        font-size: 10.5vw;
+        font-style: italic;
+        line-height: 0.6;
+        text-align: center;
+        color: #EF233C;
+    }
+
+    .uajy {
+        font-family: 'AGENCYB', sans-serif;
+        font-style: normal;
+        font-weight: 700;      
+        font-size: 8vw;
+        letter-spacing: 10px;
+        font-style: italic;
+        text-align: center;
+        color: #f8f8f8;
+    }
+
+    .ifest {
+        font-family: 'AGENCYB', sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 5vw;
+        text-align: center;
+        text-indent: 3rem;
+        color: #f8f8f8;
+    }
+}
+
+.hero-here {
+    background-color: #000;
+    min-height: 100vh;
+}

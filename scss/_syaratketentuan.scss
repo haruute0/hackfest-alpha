@@ -1,0 +1,107 @@
+.syarat-ketentuan-download {
+   
+    .button-downloader {
+
+        margin-top: 50px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        button {
+            margin: 20px 10px;
+            height: 60px;
+            background-color: #fff;
+            font-size: 1.2em;
+            border: 2px solid #EF233C;
+            border-radius: 8px;
+            display: inline-block;
+            cursor: pointer;
+            transition: ease-out 0.4s;
+            min-width: 180px;
+            box-shadow: 4px 9px 40px 2px rgba(0, 0, 0, 0.2);
+
+            i {
+                display: inline-block;
+                padding: 10px;
+                color: #17141d;
+            }
+
+            span {
+                display: inline-block;
+                font-family: 'Fjalla One', sans-serif;
+                margin-left: 5px;
+                margin-right: 15px;
+                color: #17141d;
+                font-size: 1.1em;
+            }
+
+        }
+
+        button:hover {
+            background-color: #EF233C;
+
+            i,
+            span {
+                color: #FFF;
+            }
+        }
+
+    }
+}
+
+.syarat-ketentuan {
+
+    background-color: #f8f8f8;
+
+    .items {
+        box-shadow: 4px 9px 40px 2px rgba(7, 16, 75, 0.1);
+
+        border-radius: 8px;
+
+        background-color: white;
+
+        padding: 10px 30px;
+
+        ol {
+            list-style-type: none;
+            margin-left: 38px;
+        }
+
+        li {
+            counter-increment: step-counter;
+            margin: 10px auto;
+            font-size: 1.25em;
+            position: relative;
+        }
+
+        li:before {
+            margin-left: -38px;
+            content: counter(step-counter);
+            font-weight: bold;
+            font-size: 1.5em;
+            padding-right: 5px;
+            width: 10px;
+            margin-right: 15px;
+        }
+
+        li:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 4px;
+            display: block;
+            margin-top: 0px;
+            background: rgb(0, 0, 0);
+            transition: width .5s ease;
+            -webkit-transition: width .5s ease;
+        }
+
+        li:hover:after {
+            width: 10vw;
+            background: rgb(0, 0, 0);
+        }
+
+    }
+}

@@ -1,0 +1,62 @@
+.hadiah {
+    background-color: #0d0b13;
+
+    .section-title {
+        margin-bottom: 40px;
+
+        p {
+            color: #a1a1af;
+        }
+
+        h1 {
+            color: white;
+        }
+    }
+
+}
+
+.hadiah-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .box-hadiah {
+        height: 400px;
+        width: 270px;
+        background-color: #17141d;
+        color: #a1a1af;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        margin: 25px;
+        text-align: center;
+        padding: 25px;
+        transition: 0.3s;
+
+    }
+
+    .box-hadiah:hover {
+
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    .hadiah-trophy {
+        height: 200px;
+        margin: 0 0 20px 0;
+    }
+
+    .juara {
+        font-size: 2em;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .nominal {
+        font-size: 1.5em;
+    }
+
+    .sertif {
+        font-weight: bold;
+    }
+}
