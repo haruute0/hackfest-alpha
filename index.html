@@ -47,6 +47,7 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/novacancy.js/javascript/jquery.novacancy.min.js"></script>
+    <script type="text/javascript" src="js/vertical-timeline/dist/vertical-timeline.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.hackathon').novacancy({
@@ -54,6 +55,11 @@
                 'off': 1,
                 'color': 'Red',
                 'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
+            });
+            $('.timeline-container').verticalTimeline({
+                startLeft: false,
+                alternate: true,
+                arrows: false
             });
         });
     </script>
@@ -104,9 +110,28 @@
         <div class="container">
             <h1 class="title">Timeline Acara</h1>
             <p class="subtitle is-4">UAJY Siloam Hackathon</p>
-            <p style="font-size:10em">TOLONG</p>
-            <p style="font-size:10em">WKKWKKW</p>
-            <p style="font-size:10em">:p</p>
+            <div class="timeline-container">
+                <div data-vtdate="26 April - 9 Mei 2018">
+                    <h1>Pendaftaran</h1>
+                    <p>Tim mendaftar secara online melalui tautan yang sudah disediakan.</p>
+                    <button>Register Now!</button>
+                </div>
+                <div data-vtdate="9 Mei 2018">
+                    <h1>Batas Pembayaran dan Submit Proposal</h1>
+                    <p>Batas waktu Tim melunasi biaya pendaftaran dan mengumpulkan proposal yang akan dilombakan melalui halaman area peserta.</p>
+                </div>
+                <div>
+                    <p>Seleksi Awal Proposal</p>
+                </div>
+                <div data-vtdate="11 Mei 2018">
+                    <h1>Pengumuman Seleksi Awal</h1>
+                    <p>Proporsl yang lolos seleksi awal akan maju ke babak selanjutnya.</p>
+                </div>
+                <div data-vtdate="18 - 19 Mei 2018">
+                    <h1>Hack Day</h1>
+                    <p>Tim yang lolos akan berkumpul di BLPT Yogyakarta berkompetisi secara langsung selama 24 jam untuk menjadi pemenang.</p>
+                </div>
+            </div>
         </div>
     </section>
 

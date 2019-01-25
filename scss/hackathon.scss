@@ -11,7 +11,7 @@ $dark-gray: #343739;
 $dim-red: rgb(0, 151, 126);
 $dark-khaki: #9BAB44;
 
-// Update Bulma's global variables
+// Global variables
 $grey-dark: $dark-gray;
 $primary: $green;
 $link: $dim-red;
@@ -33,6 +33,7 @@ $section-subtitle: 'Bitter', serif;
 @import 'footer';
 @import 'join';
 @import 'hackathontitle';
+@import 'timeline';
 
 // Import Bulma
 @import "../node_modules/bulma/bulma.sass";

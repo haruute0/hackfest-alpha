@@ -1,0 +1,206 @@
+/*!
+    Title: Vertical-Timeline
+    Version: 2.0.0
+    Last Change: 04/30/17
+    Author: Ryan Fitzgerald
+    Repo: https://github.com/RyanFitzgerald/vertical-timeline
+    Issues: https://github.com/RyanFitzgerald/vertical-timeline/issues
+	LICENSE: MIT
+*/
+
+.timeline {
+    background-color: #f8f8f8;
+}
+
+.timeline-container {
+    background-color: #f8f8f8;
+}
+
+.vtimeline {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.vtimeline:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: rgb(36, 36, 36);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.vtimeline-point {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.vtimeline-icon {
+    position: absolute;
+    top: 20px;
+    height: 16px;
+    width: 16px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #023b70;
+}
+
+.vtimeline-block {
+    width: 45%;
+    margin: 0;
+    transition: 0.5s ease all;
+}
+
+.vtimeline-block:after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #eee;
+    border-right: none;
+}
+
+.vtimeline-right {
+    margin-left: 55%;
+}
+
+.vtimeline-right.vt-animate-slide .vtimeline-content {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.vtimeline-right:after {
+    left: auto;
+    right: 45%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: none;
+    border-right: 10px solid #eee;
+}
+
+.vtimeline-date {
+    position: relative;
+    display: inline-block;
+    top: 8px;
+    left: 20px;
+    right: auto;
+    font-weight: bold;
+    border: solid 2pt #1d1d1d;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: #023b70
+}
+
+.vtimeline-content {
+    background: #fff;
+    padding: 10px 20px;
+    transition: 0.5s ease all;
+    border-radius: 8px;
+    box-shadow: 4px 9px 40px 2px rgba(7, 16, 75, 0.1);
+
+    h1 {
+        color: #1d1d1d;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        font-weight: bold;
+    };
+
+    button {
+        border: none;
+        border-radius: 16px;
+        background-color: #023b70;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        padding: 5px 20px;
+        font-size: 1.2em;
+        color: #eee;
+        transition: 0.3s ease;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #eee;
+        color: #023b70;
+        transition: 0.3s ease;
+      }
+}
+
+.vt-animate-fade {
+    opacity: 0;
+}
+
+.vt-animate-slide {
+    opacity: 0;
+}
+
+.vt-animate-slide .vtimeline-content {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.vt-noarrows:after {
+    content: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .vtimeline:before {
+        left: 30px;
+        right: auto;
+        margin: 0;
+    }
+
+    .vtimeline-icon {
+        left: -3px;
+        right: auto;
+        margin: 0;
+    }
+
+    .vtimeline-block {
+        width: 85%;
+        margin-left: 15%;
+    }
+
+    .vtimeline-block:after {
+        left: auto;
+        right: 85%;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: none;
+        border-right: 10px solid #eee;
+    }
+
+    .vtimeline-date {
+        position: relative;
+        display: inline-block;
+        top: 8px;
+        left: 20px;
+        right: auto;
+    }
+
+    .vtimeline-right .vtimeline-date {
+        right: auto;
+    }
+
+    .vtimeline.basic .vtimeline-date {
+        padding: 10px 10px 0 10px;
+    }
+
+    .vt-animate-slide .vtimeline-content {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
