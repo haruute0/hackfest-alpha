@@ -4,8 +4,25 @@
     min-height: 100vh;
     color: #F0F0F0;
 
+    .section-title {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
     h1 {
         margin-bottom: 20px;
-        color: rgb(0, 100, 250);
+        color: rgb(255, 255, 255);
+    }
+
+    p {
+        color: #bebebe;
+    }
+
+    .column-s {
+        background-color: rgba($color: #000000, $alpha: .3);
+        border-radius: 8px;
+        margin: 10px 30px;
+        padding: 15px 25px;
+        box-shadow: 4px 9px 40px 2px rgba(7, 16, 75, 0.1);
     }
 }
