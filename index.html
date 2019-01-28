@@ -57,7 +57,11 @@
 		<script
 			type="text/javascript"
 			src="js/vertical-timeline/dist/vertical-timeline.min.js"
-		></script>
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/smooth-scroll/dist/smooth-scroll.polyfills.min.js"
+        ></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$(".hackathon").novacancy({
@@ -76,12 +80,16 @@
 					arrows: false
 				});
 			});
-		</script>
+        </script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+		
 	</head>
 
 	<body>
 		<section class="section hero-here">
-			<div class="container">
+			<div class="container hero-here-container">
 				<div class="hackathon-title">
 					<h1 class="uajy">UAJY SILOAM</h1>
 					<p class="hackathon">HACKATHON</p>
@@ -100,9 +108,9 @@
 					</li>
 				</ul>
 			</div>
-		</section>
-
-		<section class="section about">
+        </section>
+        
+		<section id="about" class="section about">
 			<div class="container">
 				<div class="section-title">
 					<h1 class="title">Tentang Acara</h1>
@@ -133,50 +141,50 @@
 			</div>
 		</section>
 
-		<section class="section timeline">
+		<section id="timeline" class="section timeline">
 			<div class="container">
 				<h1 class="title">Timeline Acara</h1>
 				<p class="subtitle is-4">UAJY Siloam Hackathon</p>
 				<div class="timeline-container">
 					<div data-vtdate="26 April - 9 Mei 2018">
 						<h1>Pendaftaran</h1>
-						<p
-							>Tim mendaftar secara online melalui tautan yang
-							sudah disediakan.</p
-						>
+						<p>
+							Tim mendaftar secara online melalui tautan yang
+							sudah disediakan.
+						</p>
 						<button>Register Now!</button>
 					</div>
 					<div data-vtdate="9 Mei 2018">
 						<h1>Batas Pembayaran dan Submit Proposal</h1>
-						<p
-							>Batas waktu Tim melunasi biaya pendaftaran dan
+						<p>
+							Batas waktu Tim melunasi biaya pendaftaran dan
 							mengumpulkan proposal yang akan dilombakan melalui
-							halaman area peserta.</p
-						>
+							halaman area peserta.
+						</p>
 					</div>
 					<div>
 						<p>Seleksi Awal Proposal</p>
 					</div>
 					<div data-vtdate="11 Mei 2018">
 						<h1>Pengumuman Seleksi Awal</h1>
-						<p
-							>Proporsl yang lolos seleksi awal akan maju ke babak
-							selanjutnya.</p
-						>
+						<p>
+							Proporsl yang lolos seleksi awal akan maju ke babak
+							selanjutnya.
+						</p>
 					</div>
 					<div data-vtdate="18 - 19 Mei 2018">
 						<h1>Hack Day</h1>
-						<p
-							>Tim yang lolos akan berkumpul di BLPT Yogyakarta
+						<p>
+							Tim yang lolos akan berkumpul di BLPT Yogyakarta
 							berkompetisi secara langsung selama 24 jam untuk
-							menjadi pemenang.</p
-						>
+							menjadi pemenang.
+						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="section syarat-ketentuan">
+		<section id="syarat-ketentuan" class="section syarat-ketentuan">
 			<div class="container">
 				<h1 class="title">Syarat dan Ketentuan</h1>
 
@@ -186,27 +194,27 @@
 					<div class="items">
 						<ol>
 							<div class="item">
-								<li
-									>Peserta merupakan mahasiswa/i aktif
-									setingkat D3/D4/S1 di seluruh Indonesia.</li
-								>
+								<li>
+									Peserta merupakan mahasiswa/i aktif
+									setingkat D3/D4/S1 di seluruh Indonesia.
+								</li>
 								<li>Membentuk tim beranggotakan 3-5 orang.</li>
-								<li
-									>Setiap Universitas diperbolehkan mengirim
-									lebih dari 1 tim.</li
-								>
-								<li
-									>Peserta <strong>wajib</strong> melunasi
-									biaya pendaftaran sebesar Rp 150.000,-.</li
-								>
-								<li
-									>Pembayaran dapat dilakukan melalui transfer
+								<li>
+									Setiap Universitas diperbolehkan mengirim
+									lebih dari 1 tim.
+								</li>
+								<li>
+									Peserta <strong>wajib</strong> melunasi
+									biaya pendaftaran sebesar Rp 150.000,-.
+								</li>
+								<li>
+									Pembayaran dapat dilakukan melalui transfer
 									bank
 									<strong
 										>Nama Bank Nomor Rekening a/n
 										Nama</strong
-									></li
-								>
+									>
+								</li>
 							</div>
 						</ol>
 					</div>
@@ -250,7 +258,7 @@
 			</div>
 		</section>
 
-		<section class="section hadiah">
+		<section id ="hadiah" class="section hadiah">
 			<div class="container">
 				<div class="hadiah-box">
 					<div class="box-hadiah box-hadiah--1">
@@ -284,10 +292,10 @@
 				</div>
 				<div class="alt-down">
 					<center>
-						<p class="alt-button-text"
-							>Sudah punya akun? Masuk ke
-							<a href="area-peserta">area peserta</a>.</p
-						>
+						<p class="alt-button-text">
+							Sudah punya akun? Masuk ke
+							<a href="area-peserta">area peserta</a>.
+						</p>
 					</center>
 				</div>
 			</div>
@@ -314,7 +322,7 @@
 							src="images/logo-ifest.png"
 						/>
 					</div>
-					<div class="column column-w--right">
+					<div id ="contact" class="column column-w--right">
 						<div class="column-w column--upper-section">
 							<div class="title-w">
 								<h1 class="title">Contact Us</h1>

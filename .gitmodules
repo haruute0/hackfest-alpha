@@ -4,3 +4,6 @@
 [submodule "js/vertical-timeline"]
 	path = js/vertical-timeline
 	url = https://github.com/RyanFitzgerald/vertical-timeline.git
+[submodule "js/smooth-scroll"]
+	path = js/smooth-scroll
+	url = https://github.com/cferdinandi/smooth-scroll.git
