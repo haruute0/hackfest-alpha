@@ -14,6 +14,10 @@
 
 .timeline-container {
     background-color: #f8f8f8;
+    .timeline-image {
+        max-height: 180px;
+        margin: 25px auto;
+    }
 }
 
 .vtimeline {
