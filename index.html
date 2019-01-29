@@ -61,6 +61,10 @@
         <script
             type="text/javascript"
             src="js/smooth-scroll/dist/smooth-scroll.polyfills.min.js"
+		></script>
+        <script
+            type="text/javascript"
+            src="js/Scrollify/jquery.scrollify.js"
         ></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -80,34 +84,59 @@
 					arrows: false
 				});
 			});
+			$(function() {
+				$.scrollify({
+					section : ".scrollable",
+					updateHash: false
+				});
+			});
         </script>
         <script>
-            var scroll = new SmoothScroll('a[href*="#"]');
+            var scroll = new SmoothScroll('a[href*="#"]', {
+				offset: 58
+			});
         </script>
 		
 	</head>
 
 	<body>
-		<section class="section hero-here">
+
+		<header id="luxbar" class="luxbar-fixed">
+				<input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+				<div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+					<ul class="luxbar-navigation">
+						<li class="luxbar-header">
+							<a href="#" class="luxbar-brand">LUXBAR</a>
+							<label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+							id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+						</li>
+						<li class="luxbar-item"><a href="#beranda">Beranda</a></li>
+						<li class="luxbar-item"><a href="#about">About</a></li>
+						<li class="luxbar-item"><a href="#timeline">Timeline</a></li>
+						<li class="luxbar-item"><a href="#syarat-ketentuan">Syarat Ketentuan</a></li>
+						<li class="luxbar-item"><a href="#hadiah">Hadiah</a></li>
+						<li class="luxbar-item"><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</header>
+
+		<section id="beranda" class="section hero-here scrollable" data-section-name="beranda">
 			<div class="container hero-here-container">
 				<div class="hackathon-title">
 					<h1 class="uajy">UAJY SILOAM</h1>
 					<p class="hackathon">HACKATHON</p>
 					<p class="ifest">INFORMATICS FESTIVAL #7</p>
 				</div>
-				Checklist:
-				<ul>
-					<li>
-						CSS minified
-					</li>
-					<li>
-						Images compressed
-					</li>
-					<li>
-						No remote css
-					</li>
-				</ul>
+				<div class="quotation">
+					<p class="sub-quotation has-text-centered">
+						UAJY Siloam Hackathon adalah lomba live coding 24 jam yang diselenggarakan oleh Himaforka
+					</p>
+				</div>
 			</div>
+			<div class="scrollmore has-text-centered">
+					<img class="scrollmore--image infinite animated bounce" src="images/iconmonstr-arrow-65-24.png"/>
+					<p>Tau lebih lanjut</p>
+				</div>
         </section>
         
 		<section id="about" class="section about">
@@ -143,8 +172,8 @@
 
 		<section id="timeline" class="section timeline">
 			<div class="container">
-				<h1 class="title">Timeline Acara</h1>
-				<p class="subtitle is-4">UAJY Siloam Hackathon</p>
+					<h1 class="title">Timeline Acara</h1>
+					<p class="subtitle is-4">UAJY Siloam Hackathon</p>
 				<div class="timeline-container">
 					<div data-vtdate="26 April - 9 Mei 2018">
 							<center>

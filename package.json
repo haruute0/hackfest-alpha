@@ -17,7 +17,9 @@
   "dependencies": {
     "@material/button": "^0.43.0",
     "@material/ripple": "^0.43.0",
+    "animate.css": "^3.7.0",
     "bulma": "^0.7.2",
+    "luxbar": "^0.3.2",
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1"
   },

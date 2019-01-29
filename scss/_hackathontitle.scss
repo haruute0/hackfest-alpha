@@ -37,4 +37,31 @@
 .hero-here {
     background-color: #000;
     min-height: 100vh;
+
+    position: relative;
+
+    .scrollmore {
+        color: #cecece !important;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin: 0 0 0 -56px; 
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .hero-here-container {
+        padding-top: 80px;
+
+        .sub-quotation {
+            margin-top: 15px;
+            font-weight: 400;
+            font-size: 1.5em;
+            color: #f8f8f8;
+        }
+
+    }
 }
