@@ -4,10 +4,6 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/brands.css');
 
-// Luxbar Navigation
-
-@import '../node_modules/luxbar/scss/luxbar.scss';
-
 // Animation.css
 
 @import '../node_modules/animate.css/animate.min';
@@ -42,6 +38,7 @@ $section-subtitle: 'Bitter', serif;
 @import 'join';
 @import 'hackathontitle';
 @import 'timeline';
+@import 'navbar';
 
 // Import Bulma
 @import "../node_modules/bulma/bulma.sass";

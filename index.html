@@ -86,42 +86,62 @@
                 offset: 58
             });
         </script>
+                <script>
+                        $(document).ready(function() {
+                        // Check for click events on the navbar burger icon
+                        $(".navbar-burger").click(function() {
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            $(".navbar-burger").toggleClass("is-active");
+                            $(".navbar-menu").toggleClass("is-active");
+                        });
+                        
+                        $(".navbar-item").click(function() {
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            $(".navbar-burger").removeClass("is-active");
+                            $(".navbar-menu").removeClass("is-active");
+                        });
+                        });
+                    </script>
     </head>
 
     <body>
-        <header id="luxbar" class="luxbar-fixed">
-            <input
-                type="checkbox"
-                class="luxbar-checkbox"
-                id="luxbar-checkbox"
-            />
-            <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
-                <ul class="luxbar-navigation">
-                    <li class="luxbar-header">
-                        UAJY Siloam Hackathon
-                        <label
-                            class="luxbar-hamburger luxbar-hamburger-doublespin"
-                            id="luxbar-hamburger"
-                            for="luxbar-checkbox"
-                        >
-                            <span></span>
-                        </label>
-                    </li>
-                    <li class="luxbar-item"><a href="#beranda">Beranda</a></li>
-                    <li class="luxbar-item"><a href="#about">About</a></li>
-                    <li class="luxbar-item">
-                        <a href="#timeline">Timeline</a>
-                    </li>
-                    <li class="luxbar-item">
-                        <a href="#syarat-ketentuan">Syarat Ketentuan</a>
-                    </li>
-                    <li class="luxbar-item"><a href="#hadiah">Hadiah</a></li>
-					<li class="luxbar-item"><a href="#contact">Contact</a></li>
-					<li class="luxbar-item"><a href="#daftar">Daftar</a></li>
-					<li class="luxbar-item"><a href="#area-peserta">Area Peserta</a></li>
-                </ul>
+
+        <nav class="navbar is-fixed-top" aria-label="main navigation">
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <a href="#beranda">
+                    <img class="navbar__image" src="images/logo.png">
+                    </a>
+                </div>
+                <div class="navbar-item" style="padding-left:0;">
+                    <h3 class="title 3"></h3>
+                </div>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-        </header>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a class="navbar-item button-link" href="#about" class="navbar__item">Tentang</a>
+                        <a class="navbar-item button-link" href="#timeline" class="navbar__item">Timeline</a>
+                        <a class="navbar-item button-link" href="#syarat-ketentuan" class="navbar__item">Syarat Ketentuan</a>
+                        <a class="navbar-item button-link" href="#hadiah" class="navbar__item">Hadiah</a>
+                        <a class="navbar-item button-link" href="#contact" class="navbar__item">Hubungi Kami</a>
+                        <a class="navbar-item button-link button-bordered" href="pendaftaran.html" class="navbar__item">Pendaftaran</a>
+                        <a class="navbar-item button-link button-bordered" href="login.html" class="navbar__item">Area Peserta</a>
+                        <a class="navbar-item button-link button-bordered" href="https://ifest-uajy.com/" class="navbar__item">IFEST#7</a>
+                    </div>
+                </div>
+            </div>
+    </nav>
 
         <section id="beranda" class="section hero-here">
             <div class="container hero-here-container">
