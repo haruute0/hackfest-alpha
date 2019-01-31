@@ -1,0 +1,134 @@
+/*  
+    pendaftaran.css
+    Stylesheet file untuk halaman pendaftaran I2C 2019  
+    SI IFEST#7 2019
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Gloria+Hallelujah|Open+Sans|Oswald:700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title */
+.signup-title{
+    margin: 5px auto 100px;
+}
+
+/* box */
+.box {
+    margin: 20px auto;
+}
+
+label {
+    margin: 10px auto;
+}
+
+.button {
+    margin: 15px auto 0px;
+}
+
+.signup-button {
+    width: 100px;
+    background-color: #00487C;
+    transition: 0.3s;
+    color: white !important;
+    margin: 20px auto auto;
+}
+
+.signup-button:hover {
+    background-color: #2F4858;
+    transition: 0.3s;
+}
+
+/* Form */
+.form-pendaftaran{
+    max-width: 700px !important;
+    margin: 0 auto;
+}
+
+.input{
+    transition: 0.3s;
+}
+
+.input:focus{
+    transition: 0.3s;
+}
+
+/* Perhatian */
+.perhatian {
+    color: red !important;
+    font-size: 1.5em;
+}
+
+/* box-ketentuan */
+.box-ketentuan {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+    margin: 10px auto;
+    transition: 0.3s;
+}
+
+/* back-button */
+.back-button {
+    background-color: #00487C;
+    border: none;
+    transition: 0.3s;
+    color: white !important;
+    z-index: 100;
+}
+
+.back-button:hover {
+    background-color: #2F4858;
+    transition: 0.3s;
+}
+
+.floating {
+    margin: auto auto 50px;
+}
+
+/* uploader */
+.uploader {
+    margin: 20px auto auto;
+}
+
+/* hero-title-big */
+.hero-title-big {
+    font-size: 40pt;
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+    margin: 20px auto;
+    line-height: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.judul-sub {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+}
+
+.hero-logo-img {
+    max-height: 75px;
+}
+
+.hero-desc {
+    font-size: 15pt;
+    color: #232930;
+}
+
+/* Huh */
+
+body {
+    background: linear-gradient(180deg, #ffffff 0%,#c2e2ee 55%);
+}
+
+.foot {
+    margin-top: 40px;
+}
+
+/* sub-info */
+.sub-info{
+    padding-top: 5px;
+    font-size: 0.9em;
+}

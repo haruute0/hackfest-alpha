@@ -1,0 +1,99 @@
+<!--
+    login.html
+    Halaman Login ke Area Peserta UAJY Siloam Hackathon 2019
+    SI IFEST#7 2019
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Site Information -->
+    <title>Login ke Area Peserta| UAJY Siloam Hackathon</title>
+    <meta
+    name="description"
+    content="UAJY Siloam Hackathon adalah lomba live coding 24 jam yang diselenggarakan oleh Himaforka."
+/>
+    <!-- CSS Framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css" integrity="sha384-BCEeiNUiLzxxoeYaIu7jJqq0aVVz2O2Ig4WbWEmRQ2Dx/AAxNV1wMDBXyyrxw1Zd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</head>
+
+<body>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered is-vcentered is-mobile">
+                <div class="column is-narrow has-text-centered">
+                    <div class="login-logo">
+                        <img class="logo__small" src="/images/logo-UAJY Siloam Hackathon.png">
+                    </div>
+                    <h1 class="title">Area Peserta <br />UAJY Siloam Hackathon</h1>
+                    <p class="login--ptext">Selamat datang di area peserta UAJY Siloam Hackathon</p>
+                    <p class="login--ptext">Silahkan login untuk melanjutkan</p>
+                    <div class="login-control box">
+                        <form class="form" name="login" method="POST" netlify>
+                            <div class="field">
+                                <label class="label">Email Ketua Kelompok</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="text" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Password</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="password" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="login-control">
+                                <div class="is-narrow has-text-centered">
+                                    <a href="/" class="button login-button">Kembali</a>
+                                    <input class="button login-button" type="submit" value="Log In">
+                                </div>
+                            </div>
+                            <div>
+                                <p>Belum punya akun? <a href="/pendaftaran.html">Daftar disini</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete when production -->
+        <div class="development">
+            <a href='/area-peserta.html'>Skip Login</a>
+        </div>
+        <!-- Delete when production -->
+
+        <div class="foot">
+            <p class="login--ptext">&copy; 2018 - <a class="foot-link" href="https://ifest-uajy.com">IFEST#7</a> Sie. Sistem Informasi</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

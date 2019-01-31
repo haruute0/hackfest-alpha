@@ -1,0 +1,57 @@
+/*  
+    area-peserta.css
+    Stylesheet file untuk halaman area peserta
+    SI IFEST#7 2019
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Gloria+Hallelujah|Open+Sans|Oswald:700');
+
+.box-uploader{
+    max-width: 700px !important;
+    margin: 0 auto;
+}
+
+.title-area{
+    margin: 70px auto; 
+}
+
+.padding0{
+    margin-bottom: 5px !important;
+}
+
+.nama-uploader{
+    margin-left: 30px;
+}
+
+.kirim {
+    margin: 20px auto auto;
+    width: 100px;
+    background-color: #245ec6;
+    transition: 0.3s;
+    color: white !important;
+}
+
+.kirim:hover{
+    background-color: #2b2b2b;
+    transition: 0.3s;
+}
+
+.file{
+    margin: 20px auto;
+}
+
+/* hero-title-big */
+.hero-title-big {
+    font-size: 40pt;
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+    margin: 20px auto;
+    line-height: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Huh */
+
+body {
+    background: url('/images/clouds.png') no-repeat left bottom;
+}
