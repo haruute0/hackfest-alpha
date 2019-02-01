@@ -6793,7 +6793,7 @@ body {
     margin-bottom: 0; } }
 
 .need-more-members {
-  max-width: 500px;
+  max-width: 400px;
   margin: auto; }
   .need-more-members--img {
     max-height: 200px;
@@ -6805,5 +6805,7 @@ body {
     margin-bottom: 5px; }
   .need-more-members input {
     margin: 10px auto; }
+  .need-more-members .more-members-left {
+    font-weight: bold; }
 
 /*# sourceMappingURL=join.css.map */

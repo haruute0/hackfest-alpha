@@ -22,28 +22,32 @@
 	</head>
 
 	<body>
-        <section class="section has-text-centered go-back">
-            <a href="javascript:history.go(-1)" class="button">Kembali</a>
-        </section>
+		<section class="section has-text-centered go-back">
+			<a href="javascript:history.go(-1)" class="button">Kembali</a>
+		</section>
 		<section class="section warm-up">
 			<div class="container">
-                <div class="columns">
-                    <div class="column is-narrow">
-                        <img class="warm-up--img" src="images/undraw_programmer_imem.svg" alt="Programmers"/>
-                    </div>
-                    <div class="column">
-                            <img
-                            class="code-image"
-                            src="images/code-solid.svg"
-                            alt="Code Icon"
-                        />
-                            <h1 class="title">Pendaftaran Tim Hackathon</h1>
-                            <p class="subtitle">
-                                Selamat datang di UAJY Siloam Hackathon.<br />Daftarkan
-                                tim-mu dan mulai berkompetisi.
-                            </p>
-                    </div>
-                </div>
+				<div class="columns">
+					<div class="column is-narrow">
+						<img
+							class="warm-up--img"
+							src="images/undraw_programmer_imem.svg"
+							alt="Programmers"
+						/>
+					</div>
+					<div class="column">
+						<img
+							class="code-image"
+							src="images/code-solid.svg"
+							alt="Code Icon"
+						/>
+						<h1 class="title">Pendaftaran Tim Hackathon</h1>
+						<p class="subtitle">
+							Selamat datang di UAJY Siloam Hackathon.<br />Daftarkan
+							tim-mu dan mulai berkompetisi.
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -104,6 +108,7 @@
 								<div class="control">
 									<textarea
 										name="team_uni_address"
+										x
 										id="team_uni_address"
 										class="textarea"
 										type="textarea"
@@ -694,21 +699,23 @@
 								</div>
 							</div>
 						</div>
-                    </div>
-                    
-                    <div class="need-more-members box">
-                        <div class="columns">
-                            <div class="column">
-                                <img class="need-more-members--img" src="images/undraw_team_ih79.svg" alt="Need more members?"/>
-                            </div>
-                            <div class="column need-more-members--sidebox">
-                                    <h1>Butuh tambahan anggota?</h1>
-                                    <p>Kalian bisa memiliki anggota tim hingga 5 orang.</p>
-                                    <p>Sisa anggota yang bisa ditambahkan: <span class="more-members-left">2</span> anggota</p>
-                                    <input type="button" class="button showadditionalmembers--button" onclick="showadditionalmembers()" value="Tambah Anggota"></input>
-                            </div>
-                        </div>
-                    </div>
+					</div>
+
+					<div class="need-more-members box">
+						<div class="need-more-members--sidebox">
+							<h1>Ingin tambahan anggota?</h1>
+							<p>
+								Sisa anggota yang bisa ditambahkan:
+								<span class="more-members-left">2</span> anggota
+							</p>
+							<input
+								type="button"
+								class="button showadditionalmembers--button"
+								onclick="showadditionalmembers()"
+								value="Tambah Anggota"
+							/>
+						</div>
+					</div>
 
 					<div class="t-n-c box">
 						<div class="">
@@ -777,35 +784,40 @@
 					$input.hide();
 				}
 			});
-        </script>
+		</script>
 
-        <script type="text/javascript">
-            $(".participants_3").hide();
-            $(".participants_4").hide();
-            var i = 2;
-            function showadditionalmembers() {
-                if (i !== 0) {
-                    if (i === 2) {
-                        $(".participants_3").show();
-                        $('.more-members-left').text(1);
-                        $('html, body').animate({
-                            scrollTop: $(".participants_3").offset().top
-                        }, 2000);
-                        i--;
-                    } else {
-                        $(".participants_4").show();
-                        $(".need-more-members").hide();
-                        $('html, body').animate({
-                            scrollTop: $(".participants_4").offset().top
-                        }, 2000);
-                        i--;
-                    }
-                } else {
-                    console.log("Hi :D")
-                }
-                $(".showadditionalmembers--button").blur();
-
-            }
-        </script>        
+		<script type="text/javascript">
+			$(".participants_3").hide();
+			$(".participants_4").hide();
+			var i = 2;
+			function showadditionalmembers() {
+				if (i !== 0) {
+					if (i === 2) {
+						$(".participants_3").show();
+						$(".more-members-left").text(1);
+						$("html, body").animate(
+							{
+								scrollTop: $(".participants_3").offset().top
+							},
+							2000
+						);
+						i--;
+					} else {
+						$(".participants_4").show();
+						$(".need-more-members").hide();
+						$("html, body").animate(
+							{
+								scrollTop: $(".participants_4").offset().top
+							},
+							2000
+						);
+						i--;
+					}
+				} else {
+					console.log("Hi :D");
+				}
+				$(".showadditionalmembers--button").blur();
+			}
+		</script>
 	</body>
 </html>
