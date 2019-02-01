@@ -7,8 +7,7 @@ module.exports = function (grunt) {
         uncss: {
             dist: {
                 files: [
-                    { src: 'index.html', dest: 'css/hackathon.css' },
-                    { src: 'pendaftaran.html', dest: 'css/join.css' }
+                    { src: 'index.html', dest: 'css/hackathon.css' }
                 ]
             }
         },
