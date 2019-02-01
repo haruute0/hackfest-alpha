@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/bulma.sass";
+
+body {
+    background: #f8f8f8;
+}
+
+.forms{
+    h1 {
+        color: #00205b;
+        margin-bottom: 0px !important;
+        padding-bottom: 5px !important;
+    }
+}
+
+.box {
+    border-radius: 8px !important;
+    box-shadow: 4px 9px 40px 2px rgba(7, 16, 75, 0.1);
+    border: solid 1px #e8e8e8;
+    background: #fff;
+}
+
+.code-image {
+    height: 30px;
+}

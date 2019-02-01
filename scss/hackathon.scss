@@ -4,10 +4,6 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/brands.css');
 
-// Animation.css
-
-@import '../node_modules/animate.css/animate.min';
-
 // Set your brand colors
 $green: #2CA451;
 $light-blue: #FFF; //#C2E4EA;
@@ -35,7 +31,6 @@ $section-subtitle: 'Bitter', serif;
 @import 'contact';
 @import 'about';
 @import 'footer';
-@import 'join';
 @import 'hackathontitle';
 @import 'timeline';
 @import 'navbar';

@@ -7,14 +7,16 @@ module.exports = function (grunt) {
         uncss: {
             dist: {
                 files: [
-                    { src: 'index.html', dest: 'css/hackathon.css' }
+                    { src: 'index.html', dest: 'css/hackathon.css' },
+                    { src: 'join.html', dest: 'css/join.css' }
                 ]
             }
         },
         cssmin: {
             dist: {
                 files: [
-                    { src: 'css/hackathon.css', dest: 'css/hackathon.css' }
+                    { src: 'css/hackathon.css', dest: 'css/hackathon.css' },
+                    { src: 'css/join.css', dest: 'css/join.css' }
                 ]
             }
         ,
@@ -30,7 +32,8 @@ module.exports = function (grunt) {
         },
         dist: {
           files: {
-            'css/hackathon.css': 'scss/hackathon.scss'
+            'css/hackathon.css': 'scss/hackathon.scss',
+            'css/join.css': 'scss/join.scss'
           }
       }
     },
