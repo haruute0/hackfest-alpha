@@ -8,7 +8,7 @@ module.exports = function (grunt) {
             dist: {
                 files: [
                     { src: 'index.html', dest: 'css/hackathon.css' },
-                    { src: 'join.html', dest: 'css/join.css' }
+                    { src: 'pendaftaran.html', dest: 'css/join.css' }
                 ]
             }
         },
