@@ -1,862 +1,894 @@
 <!DOCTYPE html>
 <html lang="id">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, viewport-fit=cover"
-		/>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.0/css/brands.css"
+            integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.0/css/fontawesome.css"
+            integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+"
+            crossorigin="anonymous"
+        />
 
+        <title>Register your team - UAJY Siloam Hackathon</title>
+        <meta
+            name="description"
+            content="UAJY Siloam Hackathon adalah lomba live coding 24 jam yang diselenggarakan oleh Himaforka."
+        />
 
+        <link rel="stylesheet" type="text/css" href="css/join.css" />
+        <script
+            type="text/javascript"
+            src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"
+        ></script>
+    </head>
 
-		<title>Register your team - UAJY Siloam Hackathon</title>
-		<meta
-			name="description"
-			content="UAJY Siloam Hackathon adalah lomba live coding 24 jam yang diselenggarakan oleh Himaforka."
-		/>
-
-		<link rel="stylesheet" type="text/css" href="css/join.css" />
-		<script
-			type="text/javascript"
-			src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"
-		></script>
-	</head>
-
-	<body>
-		<section class="section has-text-centered go-back">
-			<a href="javascript:history.go(-1)" class="button">Kembali</a>
-		</section>
-		<section class="section warm-up">
-			<div class="container">
-				<div class="columns">
-					<div class="column is-narrow">
-						<img
-							class="warm-up--img"
-							src="images/undraw_programmer_imem.svg"
-							alt="Programmers"
-						/>
-					</div>
-					<div class="column">
-						<img
-							class="code-image"
-							src="images/code-solid.svg"
-							alt="Code Icon"
-						/>
-						<h1 class="title">Pendaftaran Tim Hackathon</h1>
-						<p class="subtitle">
-							Selamat datang di UAJY Siloam Hackathon.<br />Daftarkan
-							tim-mu dan mulai berkompetisi.
-                        </p>
-					</div>
-				</div>
-			</div>
+    <body>
+        <section class="section has-text-centered go-back">
+            <a href="javascript:history.go(-1)" class="button">Kembali</a>
         </section>
-        
-        <section class="section top-4">
-            <div class="columns has-text-centered">
-                <div class="column">
-                    <div class="box">
-                        <img class="top-4--img" src="images/undraw_team_ih79.svg">
-                        <h1>Daftar</h1>
-                        <p>Bentuk tim dengan minimal anggota 3 orang dan maksimal 5 orang.</p>
+        <section class="section warm-up">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-narrow">
+                        <img
+                            class="warm-up--img"
+                            src="images/undraw_programmer_imem.svg"
+                            alt="Programmers"
+                        />
                     </div>
-                </div>
-                <div class="column top-4--arrow is-narrow">
-                    <img class="top-4-arrow-img" src='images/iconmonstr-arrow-27-48.png'>
-                </div>
-                <div class="column">
-                    <div class="box">
-                        <img class="top-4--img" src="images/undraw_wallet_aym5.svg">
-                        <h1>Bayar</h1>
-                        <p>Bayar biaya pendaftaran sebesar Rp 150.000 melalui transfer bank.</p>
-                    </div>
-                </div>
-                <div class="column top-4--arrow is-narrow">
-                        <img class="top-4-arrow-img" src='images/iconmonstr-arrow-27-48.png'>
-                    </div>
-                <div class="column">
-                    <div class="box">
-                            <img class="top-4--img" src="images/undraw_upload_87y9.svg">
-                            <h1>Upload</h1>
-                            <p>Kumpulkan proposal yang siap dilombakan dan tunggu waktu pengumuman.</p>    
+                    <div class="column">
+                        <img
+                            class="code-image"
+                            src="images/code-solid.svg"
+                            alt="Code Icon"
+                        />
+                        <h1 class="title">Pendaftaran Tim Hackathon</h1>
+                        <p class="subtitle">
+                            Selamat datang di UAJY Siloam Hackathon.<br />Daftarkan
+                            tim-mu dan mulai berkompetisi.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-		<section class="section forms">
-			<div class="container">
-				<form name="teamregistration" method="POST" netlify>
-					<div class="team box">
-						<div class="team-title">
-							<h1 class="title">Tim</h1>
-							<p>Informasi tentang tim kalian.</p>
-						</div>
-						<hr />
+        <section class="section top-4">
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <div class="box">
+                        <img
+                            class="top-4--img"
+                            src="images/undraw_team_ih79.svg"
+                        />
+                        <h1>Daftar</h1>
+                        <p>
+                            Bentuk tim dengan minimal anggota 3 orang dan
+                            maksimal 5 orang.
+                        </p>
+                    </div>
+                </div>
+                <div class="column top-4--arrow is-narrow">
+                    <img
+                        class="top-4-arrow-img"
+                        src="images/iconmonstr-arrow-27-48.png"
+                    />
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img
+                            class="top-4--img"
+                            src="images/undraw_wallet_aym5.svg"
+                        />
+                        <h1>Bayar</h1>
+                        <p>
+                            Bayar biaya pendaftaran sebesar Rp 150.000 melalui
+                            transfer bank.
+                        </p>
+                    </div>
+                </div>
+                <div class="column top-4--arrow is-narrow">
+                    <img
+                        class="top-4-arrow-img"
+                        src="images/iconmonstr-arrow-27-48.png"
+                    />
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img
+                            class="top-4--img"
+                            src="images/undraw_upload_87y9.svg"
+                        />
+                        <h1>Upload</h1>
+                        <p>
+                            Kumpulkan proposal yang siap dilombakan dan tunggu
+                            waktu pengumuman.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-						<div class="team-field">
-							<div class="team-field--team-name field">
-								<label class="label">Nama Tim</label>
-								<div class="control">
-									<input
-										name="team_name"
-										id="team_name"
-										class="input"
-										type="text"
-										placeholder="Nama Tim"
-										required
-									/>
-								</div>
-							</div>
-							<div class="team-field--team-origin field">
-								<label class="label">Asal Universitas</label>
-								<div class="control">
-									<input
-										name="team_origin"
-										id="team_origin"
-										class="input"
-										type="text"
-										placeholder="Nama Universitas"
-										required
-									/>
-								</div>
-							</div>
-							<div class="team-field--team-telephone field">
-								<label class="label"
-									>Nomor Telepon Universitas</label
-								>
-								<div class="control">
-									<input
-										name="team_uni_phone"
-										id="team_uni_phone"
-										class="input"
-										type="text"
-										placeholder="Nomor Telepon Universitas"
-										required
-									/>
-								</div>
-							</div>
-							<div class="team-field--team-address field">
-								<label class="label">Alamat Universitas</label>
-								<div class="control">
-									<textarea
-										name="team_uni_address"
-										x
-										id="team_uni_address"
-										class="textarea"
-										type="textarea"
-										placeholder="Alamat Universitas"
-										required
-									></textarea>
-								</div>
-							</div>
-						</div>
-					</div>
+        <section class="section forms">
+            <div class="container">
+                <form name="teamregistration" method="POST" netlify>
+                    <div class="team box">
+                        <div class="team-title">
+                            <h1 class="title">Tim</h1>
+                            <p>Informasi tentang tim kalian.</p>
+                        </div>
+                        <hr />
 
-					<div class="participants box">
-						<div class="participants-title">
-							<h1 class="title">Ketua Tim</h1>
-							<p>Informasi tentang ketua tim.</p>
-						</div>
-						<hr />
+                        <div class="team-field">
+                            <div class="team-field--team-name field">
+                                <label class="label">Nama Tim</label>
+                                <div class="control">
+                                    <input
+                                        name="team_name"
+                                        id="team_name"
+                                        class="input"
+                                        type="text"
+                                        placeholder="Nama Tim"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="team-field--team-origin field">
+                                <label class="label">Asal Universitas</label>
+                                <div class="control">
+                                    <input
+                                        name="team_origin"
+                                        id="team_origin"
+                                        class="input"
+                                        type="text"
+                                        placeholder="Nama Universitas"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="team-field--team-telephone field">
+                                <label class="label"
+                                    >Nomor Telepon Universitas</label
+                                >
+                                <div class="control">
+                                    <input
+                                        name="team_uni_phone"
+                                        id="team_uni_phone"
+                                        class="input"
+                                        type="text"
+                                        placeholder="Nomor Telepon Universitas"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="team-field--team-address field">
+                                <label class="label">Alamat Universitas</label>
+                                <div class="control">
+                                    <textarea
+                                        name="team_uni_address"
+                                        x
+                                        id="team_uni_address"
+                                        class="textarea"
+                                        type="textarea"
+                                        placeholder="Alamat Universitas"
+                                        required
+                                    ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-						<div class="participants-field">
-							<div class="participants-field--name field">
-								<label class="label">Nama Ketua Tim</label>
-								<div class="control">
-									<input
-										name="team_leader_name"
-										id="team_leader_name"
-										class="input"
-										type="text"
-										placeholder="Nama Tim"
-										required
-									/>
-								</div>
-							</div>
-							<div class="participants-field---numberid field">
-								<label class="label">Nomor Mahasiswa</label>
-								<div class="control">
-									<input
-										name="team_leader_npm"
-										id="team_leader_npm"
-										class="input"
-										type="text"
-										placeholder="Nama Universitas"
-										required
-									/>
-								</div>
-							</div>
-							<div class="participants-field--gender field">
-								<label class="label">Jenis Kelamin</label>
-								<div class="select">
-									<select
-										name="team_leader_gender"
-										id="team_leader_gender"
-									>
-										<option selected disabled hidden
-											>Silahkan Pilih</option
-										>
-										<option value="male">Laki-Laki</option>
-										<option value="female"
-											>Perempuan</option
-										>
-									</select>
-								</div>
-							</div>
-							<div class="participants-field--telephone field">
-								<label class="label">Nomor Telepon</label>
-								<div class="control">
-									<input
-										name="team_leader_phone"
-										id="team_leader_phone"
-										class="input"
-										type="text"
-										placeholder="Nomor Telepon Universitas"
-										required
-									/>
-								</div>
-							</div>
-							<div class="participants-field--lineid field">
-								<label class="label">Line ID</label>
-								<div class="control has-icons-left">
-									<input
-										name="team_leader_idline"
-										id="team_leader_idline"
-										class="input"
-										type="text"
-										placeholder="Line ID"
-										required
+                    <div class="participants box">
+                        <div class="participants-title">
+                            <h1 class="title">Ketua Tim</h1>
+                            <p>Informasi tentang ketua tim.</p>
+                        </div>
+                        <hr />
+
+                        <div class="participants-field">
+                            <div class="participants-field--name field">
+                                <label class="label">Nama Ketua Tim</label>
+                                <div class="control">
+                                    <input
+                                        name="team_leader_name"
+                                        id="team_leader_name"
+                                        class="input"
+                                        type="text"
+                                        placeholder="Nama Tim"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="participants-field---numberid field">
+                                <label class="label">Nomor Mahasiswa</label>
+                                <div class="control">
+                                    <input
+                                        name="team_leader_npm"
+                                        id="team_leader_npm"
+                                        class="input"
+                                        type="text"
+                                        placeholder="Nama Universitas"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="participants-field--gender field">
+                                <label class="label">Jenis Kelamin</label>
+                                <div class="select">
+                                    <select
+                                        name="team_leader_gender"
+                                        id="team_leader_gender"
+                                    >
+                                        <option selected disabled hidden
+                                            >Silahkan Pilih</option
+                                        >
+                                        <option value="male">Laki-Laki</option>
+                                        <option value="female"
+                                            >Perempuan</option
+                                        >
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="participants-field--telephone field">
+                                <label class="label">Nomor Telepon</label>
+                                <div class="control">
+                                    <input
+                                        name="team_leader_phone"
+                                        id="team_leader_phone"
+                                        class="input"
+                                        type="text"
+                                        placeholder="Nomor Telepon Universitas"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="participants-field--lineid field">
+                                <label class="label">Line ID</label>
+                                <div class="control has-icons-left">
+                                    <input
+                                        name="team_leader_idline"
+                                        id="team_leader_idline"
+                                        class="input"
+                                        type="text"
+                                        placeholder="Line ID"
+                                        required
                                     />
                                     <span class="icon is-left">
                                         <i class="fab fa-line"></i>
                                     </span>
-								</div>
-							</div>
-							<div class="participants-field--email field">
-								<label class="label">Email Ketua Tim</label>
-								<div class="control">
-									<input
-										name="team_leader_email"
-										id="team_leader_email"
-										class="input"
-										type="email"
-										placeholder="Email"
-										required
-									/>
-									<p class="sub-info">
-										Email ini digunakan untuk login ke area
-										peserta dan menerima informasi seputar
-										UAJY Siloam Hackathon.
-									</p>
-								</div>
-							</div>
-							<div class="participants-field--password field">
-								<label class="label">Password</label>
-								<div class="control">
-									<input
-										name="team_leader_password"
-										id="team_leader_password"
-										class="input"
-										type="password"
-										placeholder="Password"
-										required
-									/>
-									<p class="sub-info">
-										Password ini digunakan untuk login ke
-										area peserta. Harap ingat password anda!
-										Lupa password bukan tanggung jawab
-										panitia.
-									</p>
-								</div>
-							</div>
-							<div
-								class="participants-field--password-confirm field"
-							>
-								<label class="label"
-									>Password Confirmation</label
-								>
-								<div class="control">
-									<input
-										name="team_leader_confirm_password"
-										id="team_leader_confirm_password"
-										class="input"
-										type="password"
-										placeholder="Password Confirmation"
-										required
-									/>
-								</div>
-							</div>
-							<div class="field">
-								<div class="participants-field--vege">
-									<label class="checkbox">
-										<input
-											type="checkbox"
-											name="team_leader_vege"
-											id="team_leader_vege"
-											value="vege"
-										/>
-										Vegetarian? Centang jika anda seorang
-										vegetarian.
-									</label>
-								</div>
-								<div classs="participants-field--alergen">
-									<input
-										type="checkbox"
-										id="team_leader_alergen_boolean"
-										name="team_leader_alergen_boolean"
-										class="showHideCheck"
-										value="alergen"
-									/>
-									<label for="team_leader_alergen_boolean"
-										>Alergi? Centang jika anda memiliki
-										alergi.</label
-									>
-									<br />
-									<div class="hiddenInput">
-										<label class="label">
-											Jika anda memiliki alergi, harap
-											tulis dibawah ini!
-										</label>
-										<div class="control">
-											<input
-												id="team_leader_alergen"
-												name="team_leader_alergen"
-												class="input"
-												type="text"
-											/>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                                </div>
+                            </div>
+                            <div class="participants-field--email field">
+                                <label class="label">Email Ketua Tim</label>
+                                <div class="control">
+                                    <input
+                                        name="team_leader_email"
+                                        id="team_leader_email"
+                                        class="input"
+                                        type="email"
+                                        placeholder="Email"
+                                        required
+                                    />
+                                    <p class="sub-info">
+                                        Email ini digunakan untuk login ke area
+                                        peserta dan menerima informasi seputar
+                                        UAJY Siloam Hackathon.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="participants-field--password field">
+                                <label class="label">Password</label>
+                                <div class="control">
+                                    <input
+                                        name="team_leader_password"
+                                        id="team_leader_password"
+                                        class="input"
+                                        type="password"
+                                        placeholder="Password"
+                                        required
+                                    />
+                                    <p class="sub-info">
+                                        Password ini digunakan untuk login ke
+                                        area peserta. Harap ingat password anda!
+                                        Lupa password bukan tanggung jawab
+                                        panitia.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="participants-field--password-confirm field"
+                            >
+                                <label class="label"
+                                    >Password Confirmation</label
+                                >
+                                <div class="control">
+                                    <input
+                                        name="team_leader_confirm_password"
+                                        id="team_leader_confirm_password"
+                                        class="input"
+                                        type="password"
+                                        placeholder="Password Confirmation"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="participants-field--vege">
+                                    <label class="checkbox">
+                                        <input
+                                            type="checkbox"
+                                            name="team_leader_vege"
+                                            id="team_leader_vege"
+                                            value="vege"
+                                        />
+                                        Vegetarian? Centang jika anda seorang
+                                        vegetarian.
+                                    </label>
+                                </div>
+                                <div classs="participants-field--alergen">
+                                    <input
+                                        type="checkbox"
+                                        id="team_leader_alergen_boolean"
+                                        name="team_leader_alergen_boolean"
+                                        class="showHideCheck"
+                                        value="alergen"
+                                    />
+                                    <label for="team_leader_alergen_boolean"
+                                        >Alergi? Centang jika anda memiliki
+                                        alergi.</label
+                                    >
+                                    <br />
+                                    <div class="hiddenInput">
+                                        <label class="label">
+                                            Jika anda memiliki alergi, harap
+                                            tulis dibawah ini!
+                                        </label>
+                                        <div class="control">
+                                            <input
+                                                id="team_leader_alergen"
+                                                name="team_leader_alergen"
+                                                class="input"
+                                                type="text"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-					<div class="participants">
-						<div class="participants_1 box">
-							<div class="participants-title">
-								<h1 class="title">Peserta 1</h1>
-								<p>Informasi tentang anggota tim.</p>
-							</div>
-							<hr />
+                    <div class="participants">
+                        <div class="participants_1 box">
+                            <div class="participants-title">
+                                <h1 class="title">Peserta 1</h1>
+                                <p>Informasi tentang anggota tim.</p>
+                            </div>
+                            <hr />
 
-							<div class="participants-field">
-								<div class="participants-field--name field">
-									<label class="label">Nama Peserta</label>
-									<div class="control">
-										<input
-											name="participants_1_name"
-											id="participants_1_name"
-											class="input"
-											type="text"
-											placeholder="Nama Tim"
-											required
-										/>
-									</div>
-								</div>
-								<div
-									class="participants-field---numberid field"
-								>
-									<label class="label">Nomor Mahasiswa</label>
-									<div class="control">
-										<input
-											name="participants_1_npm"
-											id="participants_1_npm"
-											class="input"
-											type="text"
-											placeholder="Nama Universitas"
-											required
-										/>
-									</div>
-								</div>
-								<div class="participants-field--gender field">
-									<label class="label">Jenis Kelamin</label>
-									<div class="select">
-										<select
-											name="participants_1_gender"
-											id="participants_1_gender"
-										>
-											<option selected disabled hidden
-												>Silahkan Pilih</option
-											>
-											<option value="male"
-												>Laki-Laki</option
-											>
-											<option value="female"
-												>Perempuan</option
-											>
-										</select>
-									</div>
-								</div>
-								<div class="field">
-									<div class="participants-field--vege">
-										<label class="checkbox">
-											<input
-												type="checkbox"
-												name="participants_1_vege"
-												id="participants_1_vege"
-												value="vege"
-											/>
-											Vegetarian? Centang jika anda
-											seorang vegetarian.
-										</label>
-									</div>
-									<div classs="participants-field--alergen">
-										<input
-											type="checkbox"
-											id="participants_1_alergen_boolean"
-											name="participants_1_alergen_boolean"
-											class="showHideCheck"
-											value="alergen"
-										/>
-										<label
-											for="participants_1_alergen_boolean"
-											>Alergi? Centang jika anda memiliki
-											alergi.</label
-										>
-										<br />
-										<div class="hiddenInput">
-											<label class="label">
-												Jika anda memiliki alergi, harap
-												tulis dibawah ini!
-											</label>
-											<div class="control">
-												<input
-													id="participants_1_alergen"
-													name="participants_1_alergen"
-													class="input"
-													type="text"
-												/>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="participants_2 box">
-							<div class="participants-title">
-								<h1 class="title">Peserta 2</h1>
-								<p>Informasi tentang anggota tim.</p>
-							</div>
-							<hr />
+                            <div class="participants-field">
+                                <div class="participants-field--name field">
+                                    <label class="label">Nama Peserta</label>
+                                    <div class="control">
+                                        <input
+                                            name="participants_1_name"
+                                            id="participants_1_name"
+                                            class="input"
+                                            type="text"
+                                            placeholder="Nama Tim"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="participants-field---numberid field"
+                                >
+                                    <label class="label">Nomor Mahasiswa</label>
+                                    <div class="control">
+                                        <input
+                                            name="participants_1_npm"
+                                            id="participants_1_npm"
+                                            class="input"
+                                            type="text"
+                                            placeholder="Nama Universitas"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="participants-field--gender field">
+                                    <label class="label">Jenis Kelamin</label>
+                                    <div class="select">
+                                        <select
+                                            name="participants_1_gender"
+                                            id="participants_1_gender"
+                                        >
+                                            <option selected disabled hidden
+                                                >Silahkan Pilih</option
+                                            >
+                                            <option value="male"
+                                                >Laki-Laki</option
+                                            >
+                                            <option value="female"
+                                                >Perempuan</option
+                                            >
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="participants-field--vege">
+                                        <label class="checkbox">
+                                            <input
+                                                type="checkbox"
+                                                name="participants_1_vege"
+                                                id="participants_1_vege"
+                                                value="vege"
+                                            />
+                                            Vegetarian? Centang jika anda
+                                            seorang vegetarian.
+                                        </label>
+                                    </div>
+                                    <div classs="participants-field--alergen">
+                                        <input
+                                            type="checkbox"
+                                            id="participants_1_alergen_boolean"
+                                            name="participants_1_alergen_boolean"
+                                            class="showHideCheck"
+                                            value="alergen"
+                                        />
+                                        <label
+                                            for="participants_1_alergen_boolean"
+                                            >Alergi? Centang jika anda memiliki
+                                            alergi.</label
+                                        >
+                                        <br />
+                                        <div class="hiddenInput">
+                                            <label class="label">
+                                                Jika anda memiliki alergi, harap
+                                                tulis dibawah ini!
+                                            </label>
+                                            <div class="control">
+                                                <input
+                                                    id="participants_1_alergen"
+                                                    name="participants_1_alergen"
+                                                    class="input"
+                                                    type="text"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="participants_2 box">
+                            <div class="participants-title">
+                                <h1 class="title">Peserta 2</h1>
+                                <p>Informasi tentang anggota tim.</p>
+                            </div>
+                            <hr />
 
-							<div class="participants-field">
-								<div class="participants-field--name field">
-									<label class="label">Nama Peserta</label>
-									<div class="control">
-										<input
-											name="participants_2_name"
-											id="participants_2_name"
-											class="input"
-											type="text"
-											placeholder="Nama Tim"
-											required
-										/>
-									</div>
-								</div>
-								<div
-									class="participants-field---numberid field"
-								>
-									<label class="label">Nomor Mahasiswa</label>
-									<div class="control">
-										<input
-											name="participants_2_npm"
-											id="participants_2_npm"
-											class="input"
-											type="text"
-											placeholder="Nama Universitas"
-											required
-										/>
-									</div>
-								</div>
-								<div class="participants-field--gender field">
-									<label class="label">Jenis Kelamin</label>
-									<div class="select">
-										<select
-											name="participants_2_gender"
-											id="participants_2_gender"
-										>
-											<option selected disabled hidden
-												>Silahkan Pilih</option
-											>
-											<option value="male"
-												>Laki-Laki</option
-											>
-											<option value="female"
-												>Perempuan</option
-											>
-										</select>
-									</div>
-								</div>
-								<div class="field">
-									<div class="participants-field--vege">
-										<label class="checkbox">
-											<input
-												type="checkbox"
-												name="participants_2_vege"
-												id="participants_2_vege"
-												value="vege"
-											/>
-											Vegetarian? Centang jika anda
-											seorang vegetarian.
-										</label>
-									</div>
-									<div classs="participants-field--alergen">
-										<input
-											type="checkbox"
-											id="participants_2_alergen_boolean"
-											name="participants_2_alergen_boolean"
-											class="showHideCheck"
-											value="alergen"
-										/>
-										<label
-											for="participants_2_alergen_boolean"
-											>Alergi? Centang jika anda memiliki
-											alergi.</label
-										>
-										<br />
-										<div class="hiddenInput">
-											<label class="label">
-												Jika anda memiliki alergi, harap
-												tulis dibawah ini!
-											</label>
-											<div class="control">
-												<input
-													id="participants_2_alergen"
-													name="participants_2_alergen"
-													class="input"
-													type="text"
-												/>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+                            <div class="participants-field">
+                                <div class="participants-field--name field">
+                                    <label class="label">Nama Peserta</label>
+                                    <div class="control">
+                                        <input
+                                            name="participants_2_name"
+                                            id="participants_2_name"
+                                            class="input"
+                                            type="text"
+                                            placeholder="Nama Tim"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="participants-field---numberid field"
+                                >
+                                    <label class="label">Nomor Mahasiswa</label>
+                                    <div class="control">
+                                        <input
+                                            name="participants_2_npm"
+                                            id="participants_2_npm"
+                                            class="input"
+                                            type="text"
+                                            placeholder="Nama Universitas"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="participants-field--gender field">
+                                    <label class="label">Jenis Kelamin</label>
+                                    <div class="select">
+                                        <select
+                                            name="participants_2_gender"
+                                            id="participants_2_gender"
+                                        >
+                                            <option selected disabled hidden
+                                                >Silahkan Pilih</option
+                                            >
+                                            <option value="male"
+                                                >Laki-Laki</option
+                                            >
+                                            <option value="female"
+                                                >Perempuan</option
+                                            >
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="participants-field--vege">
+                                        <label class="checkbox">
+                                            <input
+                                                type="checkbox"
+                                                name="participants_2_vege"
+                                                id="participants_2_vege"
+                                                value="vege"
+                                            />
+                                            Vegetarian? Centang jika anda
+                                            seorang vegetarian.
+                                        </label>
+                                    </div>
+                                    <div classs="participants-field--alergen">
+                                        <input
+                                            type="checkbox"
+                                            id="participants_2_alergen_boolean"
+                                            name="participants_2_alergen_boolean"
+                                            class="showHideCheck"
+                                            value="alergen"
+                                        />
+                                        <label
+                                            for="participants_2_alergen_boolean"
+                                            >Alergi? Centang jika anda memiliki
+                                            alergi.</label
+                                        >
+                                        <br />
+                                        <div class="hiddenInput">
+                                            <label class="label">
+                                                Jika anda memiliki alergi, harap
+                                                tulis dibawah ini!
+                                            </label>
+                                            <div class="control">
+                                                <input
+                                                    id="participants_2_alergen"
+                                                    name="participants_2_alergen"
+                                                    class="input"
+                                                    type="text"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-						<div class="participants_3 box">
-							<div class="participants-title">
-								<h1 class="title">Peserta 3</h1>
-								<p>Informasi tentang anggota tim.</p>
-							</div>
-							<hr />
+                        <div class="participants_3 box">
+                            <div class="participants-title">
+                                <h1 class="title">Peserta 3</h1>
+                                <p>Informasi tentang anggota tim.</p>
+                            </div>
+                            <hr />
 
-							<div class="participants-field">
-								<div class="participants-field--name field">
-									<label class="label">Nama Peserta</label>
-									<div class="control">
-										<input
-											name="participants_3_name"
-											id="participants_3_name"
-											class="input"
-											type="text"
-											placeholder="Nama Tim"
-											required
-										/>
-									</div>
-								</div>
-								<div
-									class="participants-field---numberid field"
-								>
-									<label class="label">Nomor Mahasiswa</label>
-									<div class="control">
-										<input
-											name="participants_3_npm"
-											id="participants_3_npm"
-											class="input"
-											type="text"
-											placeholder="Nama Universitas"
-											required
-										/>
-									</div>
-								</div>
-								<div class="participants-field--gender field">
-									<label class="label">Jenis Kelamin</label>
-									<div class="select">
-										<select
-											name="participants_3_gender"
-											id="participants_3_gender"
-										>
-											<option selected disabled hidden
-												>Silahkan Pilih</option
-											>
-											<option value="male"
-												>Laki-Laki</option
-											>
-											<option value="female"
-												>Perempuan</option
-											>
-										</select>
-									</div>
-								</div>
-								<div class="field">
-									<div class="participants-field--vege">
-										<label class="checkbox">
-											<input
-												type="checkbox"
-												name="participants_3_vege"
-												id="participants_3_vege"
-												value="vege"
-											/>
-											Vegetarian? Centang jika anda
-											seorang vegetarian.
-										</label>
-									</div>
-									<div classs="participants-field--alergen">
-										<input
-											type="checkbox"
-											id="participants_3_alergen_boolean"
-											name="participants_3_alergen_boolean"
-											class="showHideCheck"
-											value="alergen"
-										/>
-										<label
-											for="participants_3_alergen_boolean"
-											>Alergi? Centang jika anda memiliki
-											alergi.</label
-										>
-										<br />
-										<div class="hiddenInput">
-											<label class="label">
-												Jika anda memiliki alergi, harap
-												tulis dibawah ini!
-											</label>
-											<div class="control">
-												<input
-													id="participants_3_alergen"
-													name="participants_3_alergen"
-													class="input"
-													type="text"
-												/>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+                            <div class="participants-field">
+                                <div class="participants-field--name field">
+                                    <label class="label">Nama Peserta</label>
+                                    <div class="control">
+                                        <input
+                                            name="participants_3_name"
+                                            id="participants_3_name"
+                                            class="input"
+                                            type="text"
+                                            placeholder="Nama Tim"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="participants-field---numberid field"
+                                >
+                                    <label class="label">Nomor Mahasiswa</label>
+                                    <div class="control">
+                                        <input
+                                            name="participants_3_npm"
+                                            id="participants_3_npm"
+                                            class="input"
+                                            type="text"
+                                            placeholder="Nama Universitas"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="participants-field--gender field">
+                                    <label class="label">Jenis Kelamin</label>
+                                    <div class="select">
+                                        <select
+                                            name="participants_3_gender"
+                                            id="participants_3_gender"
+                                        >
+                                            <option selected disabled hidden
+                                                >Silahkan Pilih</option
+                                            >
+                                            <option value="male"
+                                                >Laki-Laki</option
+                                            >
+                                            <option value="female"
+                                                >Perempuan</option
+                                            >
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="participants-field--vege">
+                                        <label class="checkbox">
+                                            <input
+                                                type="checkbox"
+                                                name="participants_3_vege"
+                                                id="participants_3_vege"
+                                                value="vege"
+                                            />
+                                            Vegetarian? Centang jika anda
+                                            seorang vegetarian.
+                                        </label>
+                                    </div>
+                                    <div classs="participants-field--alergen">
+                                        <input
+                                            type="checkbox"
+                                            id="participants_3_alergen_boolean"
+                                            name="participants_3_alergen_boolean"
+                                            class="showHideCheck"
+                                            value="alergen"
+                                        />
+                                        <label
+                                            for="participants_3_alergen_boolean"
+                                            >Alergi? Centang jika anda memiliki
+                                            alergi.</label
+                                        >
+                                        <br />
+                                        <div class="hiddenInput">
+                                            <label class="label">
+                                                Jika anda memiliki alergi, harap
+                                                tulis dibawah ini!
+                                            </label>
+                                            <div class="control">
+                                                <input
+                                                    id="participants_3_alergen"
+                                                    name="participants_3_alergen"
+                                                    class="input"
+                                                    type="text"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-						<div class="participants_4 box">
-							<div class="participants-title">
-								<h1 class="title">Peserta 4</h1>
-								<p>Informasi tentang anggota tim.</p>
-							</div>
-							<hr />
+                        <div class="participants_4 box">
+                            <div class="participants-title">
+                                <h1 class="title">Peserta 4</h1>
+                                <p>Informasi tentang anggota tim.</p>
+                            </div>
+                            <hr />
 
-							<div class="participants-field">
-								<div class="participants-field--name field">
-									<label class="label">Nama Peserta</label>
-									<div class="control">
-										<input
-											name="participants_4_name"
-											id="participants_4_name"
-											class="input"
-											type="text"
-											placeholder="Nama Tim"
-											required
-										/>
-									</div>
-								</div>
-								<div
-									class="participants-field---numberid field"
-								>
-									<label class="label">Nomor Mahasiswa</label>
-									<div class="control">
-										<input
-											name="participants_4_npm"
-											id="participants_4_npm"
-											class="input"
-											type="text"
-											placeholder="Nama Universitas"
-											required
-										/>
-									</div>
-								</div>
-								<div class="participants-field--gender field">
-									<label class="label">Jenis Kelamin</label>
-									<div class="select">
-										<select
-											name="participants_4_gender"
-											id="participants_4_gender"
-										>
-											<option selected disabled hidden
-												>Silahkan Pilih</option
-											>
-											<option value="male"
-												>Laki-Laki</option
-											>
-											<option value="female"
-												>Perempuan</option
-											>
-										</select>
-									</div>
-								</div>
-								<div class="field">
-									<div class="participants-field--vege">
-										<label class="checkbox">
-											<input
-												type="checkbox"
-												name="participants_4_vege"
-												id="participants_4_vege"
-												value="vege"
-											/>
-											Vegetarian? Centang jika anda
-											seorang vegetarian.
-										</label>
-									</div>
-									<div classs="participants-field--alergen">
-										<input
-											type="checkbox"
-											id="participants_4_alergen_boolean"
-											name="participants_4_alergen_boolean"
-											class="showHideCheck"
-											value="alergen"
-										/>
-										<label
-											for="participants_4_alergen_boolean"
-											>Alergi? Centang jika anda memiliki
-											alergi.</label
-										>
-										<br />
-										<div class="hiddenInput">
-											<label class="label">
-												Jika anda memiliki alergi, harap
-												tulis dibawah ini!
-											</label>
-											<div class="control">
-												<input
-													id="participants_4_alergen"
-													name="participants_4_alergen"
-													class="input"
-													type="text"
-												/>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                            <div class="participants-field">
+                                <div class="participants-field--name field">
+                                    <label class="label">Nama Peserta</label>
+                                    <div class="control">
+                                        <input
+                                            name="participants_4_name"
+                                            id="participants_4_name"
+                                            class="input"
+                                            type="text"
+                                            placeholder="Nama Tim"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="participants-field---numberid field"
+                                >
+                                    <label class="label">Nomor Mahasiswa</label>
+                                    <div class="control">
+                                        <input
+                                            name="participants_4_npm"
+                                            id="participants_4_npm"
+                                            class="input"
+                                            type="text"
+                                            placeholder="Nama Universitas"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="participants-field--gender field">
+                                    <label class="label">Jenis Kelamin</label>
+                                    <div class="select">
+                                        <select
+                                            name="participants_4_gender"
+                                            id="participants_4_gender"
+                                        >
+                                            <option selected disabled hidden
+                                                >Silahkan Pilih</option
+                                            >
+                                            <option value="male"
+                                                >Laki-Laki</option
+                                            >
+                                            <option value="female"
+                                                >Perempuan</option
+                                            >
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="participants-field--vege">
+                                        <label class="checkbox">
+                                            <input
+                                                type="checkbox"
+                                                name="participants_4_vege"
+                                                id="participants_4_vege"
+                                                value="vege"
+                                            />
+                                            Vegetarian? Centang jika anda
+                                            seorang vegetarian.
+                                        </label>
+                                    </div>
+                                    <div classs="participants-field--alergen">
+                                        <input
+                                            type="checkbox"
+                                            id="participants_4_alergen_boolean"
+                                            name="participants_4_alergen_boolean"
+                                            class="showHideCheck"
+                                            value="alergen"
+                                        />
+                                        <label
+                                            for="participants_4_alergen_boolean"
+                                            >Alergi? Centang jika anda memiliki
+                                            alergi.</label
+                                        >
+                                        <br />
+                                        <div class="hiddenInput">
+                                            <label class="label">
+                                                Jika anda memiliki alergi, harap
+                                                tulis dibawah ini!
+                                            </label>
+                                            <div class="control">
+                                                <input
+                                                    id="participants_4_alergen"
+                                                    name="participants_4_alergen"
+                                                    class="input"
+                                                    type="text"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-					<div class="need-more-members box">
-						<div class="need-more-members--sidebox">
-							<h1>Ingin tambahan anggota?</h1>
-							<p>
-								Sisa anggota yang bisa ditambahkan:
-								<span class="more-members-left">2</span> anggota
-							</p>
-							<input
-								type="button"
-								class="button showadditionalmembers--button"
-								onclick="showadditionalmembers()"
-								value="Tambah Anggota"
-							/>
-						</div>
-					</div>
+                    <div class="need-more-members box">
+                        <div class="need-more-members--sidebox">
+                            <h1>Ingin tambahan anggota?</h1>
+                            <p>
+                                Sisa anggota yang bisa ditambahkan:
+                                <span class="more-members-left">2</span> anggota
+                            </p>
+                            <input
+                                type="button"
+                                class="button showadditionalmembers--button"
+                                onclick="showadditionalmembers()"
+                                value="Tambah Anggota"
+                            />
+                        </div>
+                    </div>
 
-					<div class="t-n-c box">
-						<div class="">
-							<p class="warn-w">Perhatian!</p>
-							<p class="body-w">
-								Mohon cek data yang sudah diinput. Pastikan
-								semua sudah benar.
-							</p>
-							<p class="body-w">
-								Harap ingat password anda! Lupa password bukan
-								menjadi tanggung jawab panitia.
-							</p>
-						</div>
+                    <div class="t-n-c box">
+                        <div class="">
+                            <p class="warn-w">Perhatian!</p>
+                            <p class="body-w">
+                                Mohon cek data yang sudah diinput. Pastikan
+                                semua sudah benar.
+                            </p>
+                            <p class="body-w">
+                                Harap ingat password anda! Lupa password bukan
+                                menjadi tanggung jawab panitia.
+                            </p>
+                        </div>
 
-						<div class="t-n-c field">
-							<label class="checkbox">
-								<input type="checkbox" required />
-								Saya telah membaca
-								<a
-									href="../#ketentuan"
-									target="_blank"
-									rel="noopener noreferrer"
-									>Ketentuan Kompetisi UAJY Siloam
-									Hackathon</a
-								>.
-							</label>
-						</div>
+                        <div class="t-n-c field">
+                            <label class="checkbox">
+                                <input type="checkbox" required />
+                                Saya telah membaca
+                                <a
+                                    href="../#ketentuan"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Ketentuan Kompetisi UAJY Siloam
+                                    Hackathon</a
+                                >.
+                            </label>
+                        </div>
 
-						<div class="submit field">
-							<input class="button join-button" type="submit" />
-						</div>
-					</div>
-				</form>
-			</div>
-		</section>
+                        <div class="submit field">
+                            <input class="button join-button" type="submit" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
 
-		<section class="section footer-w">
-			<div class="container">
-				<div class="has-text-centered">
-					<p style="vertical-align:middle">
-						Made with
-						<span
-							style="color: #c51104; font-size: 1.5em; vertical-align:middle;"
-							>❤</span
-						>
-						by <strong>Sie. Sistem Informasi</strong>. &copy; 2019
-						<a
-							href="https://ifest-uajy.com"
-							target="_blank"
-							rel="noopener noreferrer"
-							><strong>IFEST #7</strong></a
-						>
-					</p>
-				</div>
-			</div>
-		</section>
+        <section class="section footer-w">
+            <div class="container">
+                <div class="has-text-centered">
+                    <p style="vertical-align:middle">
+                        Made with
+                        <span
+                            style="color: #c51104; font-size: 1.5em; vertical-align:middle;"
+                            >❤</span
+                        >
+                        by <strong>Sie. Sistem Informasi</strong>. &copy; 2019
+                        <a
+                            href="https://ifest-uajy.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><strong>IFEST #7</strong></a
+                        >
+                    </p>
+                </div>
+            </div>
+        </section>
 
-		<script type="text/javascript">
-			$(".hiddenInput").hide();
-			$(".showHideCheck").on("change", function() {
-				$this = $(this);
-				$input = $this.parent().find(".hiddenInput");
-				if ($this.is(":checked")) {
-					$input.show();
-				} else {
-					$input.hide();
-				}
-			});
-		</script>
+        <script type="text/javascript">
+            $('.hiddenInput').hide()
+            $('.showHideCheck').on('change', function() {
+                $this = $(this)
+                $input = $this.parent().find('.hiddenInput')
+                if ($this.is(':checked')) {
+                    $input.show()
+                } else {
+                    $input.hide()
+                }
+            })
+        </script>
 
-		<script type="text/javascript">
-			$(".participants_3").hide();
-			$(".participants_4").hide();
-			var i = 2;
-			function showadditionalmembers() {
-				if (i !== 0) {
-					if (i === 2) {
-						$(".participants_3").show();
-						$(".more-members-left").text(1);
-						$("html, body").animate(
-							{
-								scrollTop: $(".participants_3").offset().top
-							},
-							2000
-						);
-						i--;
-					} else {
-						$(".participants_4").show();
-						$(".need-more-members").hide();
-						$("html, body").animate(
-							{
-								scrollTop: $(".participants_4").offset().top
-							},
-							2000
-						);
-						i--;
-					}
-				} else {
-					console.log("Hi :D");
-				}
-				$(".showadditionalmembers--button").blur();
-			}
-		</script>
-	</body>
+        <script type="text/javascript">
+            $('.participants_3').hide()
+            $('.participants_4').hide()
+            var i = 2
+            function showadditionalmembers() {
+                if (i !== 0) {
+                    if (i === 2) {
+                        $('.participants_3').show()
+                        $('.more-members-left').text(1)
+                        $('html, body').animate(
+                            {
+                                scrollTop: $('.participants_3').offset().top,
+                            },
+                            2000
+                        )
+                        i--
+                    } else {
+                        $('.participants_4').show()
+                        $('.need-more-members').hide()
+                        $('html, body').animate(
+                            {
+                                scrollTop: $('.participants_4').offset().top,
+                            },
+                            2000
+                        )
+                        i--
+                    }
+                } else {
+                    console.log('Hi :D')
+                }
+                $('.showadditionalmembers--button').blur()
+            }
+        </script>
+    </body>
 </html>

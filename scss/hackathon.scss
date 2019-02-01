@@ -5,11 +5,11 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/brands.css');
 
 // Set your brand colors
-$green: #2CA451;
-$light-blue: #FFF; //#C2E4EA;
+$green: #2ca451;
+$light-blue: #fff; //#C2E4EA;
 $dark-gray: #343739;
 $dim-red: rgb(0, 151, 126);
-$dark-khaki: #9BAB44;
+$dark-khaki: #9bab44;
 
 // Global variables
 $grey-dark: $dark-gray;
@@ -22,7 +22,7 @@ $fullhd-enabled: false;
 $body-background-color: $light-blue;
 
 // Additional custom css
-$section-title :'Staatliches', cursive;
+$section-title: 'Staatliches', cursive;
 $section-subtitle: 'Bitter', serif;
 
 @import 'fonts';
@@ -36,4 +36,4 @@ $section-subtitle: 'Bitter', serif;
 @import 'navbar';
 
 // Import Bulma
-@import "../node_modules/bulma/bulma.sass";
+@import '../node_modules/bulma/bulma.sass';

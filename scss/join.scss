@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import "../node_modules/bulma/bulma.sass";
+@import '../node_modules/bulma/bulma.sass';
 
 body {
     background: #f8f8f8;
@@ -22,7 +22,7 @@ body {
     }
 }
 
-.forms{
+.forms {
     h1 {
         color: #00205b;
         margin-bottom: 0px !important;
@@ -67,8 +67,7 @@ body {
     .top-4--arrow {
         display: none;
     }
- }
-
+}
 
 .need-more-members {
     max-width: 400px;
@@ -98,8 +97,7 @@ body {
 }
 
 .top-4 {
-
-    margin:0 3vw;
+    margin: 0 3vw;
     padding: 0;
     .columns {
         margin: auto;

@@ -5,62 +5,60 @@
     padding: 0 15vh;
     position: fixed;
     background-color: #222222 !important;
-    
-    
- .navbar-item, .navbar-link {
-   padding: 15px 1rem;
-}
 
-.navbar-item img {
-   max-height: 3rem;
-}
+    .navbar-item,
+    .navbar-link {
+        padding: 15px 1rem;
+    }
 
-.navbar-burger {
-   height: auto;
-}
+    .navbar-item img {
+        max-height: 3rem;
+    }
 
-/* Navbar buttons */
-.button-link {
-   color: #f0f0f0 !important;
-   transition: 0.2s;
-}
+    .navbar-burger {
+        height: auto;
+    }
 
-.button-link:hover{
-   background-color: #222222 !important;
-   border-radius: 10px;
-   color: #d80000 !important;
-   transition: 0.2s;
-}
+    /* Navbar buttons */
+    .button-link {
+        color: #f0f0f0 !important;
+        transition: 0.2s;
+    }
 
-@media screen and (min-width: 851px) {
-    .button-bordered {
+    .button-link:hover {
         background-color: #222222 !important;
         border-radius: 10px;
-        color: #f0f0f0 !important;
-        margin: 0px 5px;
+        color: #d80000 !important;
         transition: 0.2s;
-     }
-     
-     .button-bordered:hover {
-        background-color: #000000 !important;
-        color: #ffffff !important;
-        transition: 0.2s;
-     }
- }
-
- }
-
- /* Responsive rules */
-@media screen and (max-width: 850px) {
-   .navbar {
-       padding: 0;
-       background-color: inherit;
-  }
-  .is-active {
-      background-color: inherit;
     }
-    .button-bordered
-    {
+
+    @media screen and (min-width: 851px) {
+        .button-bordered {
+            background-color: #222222 !important;
+            border-radius: 10px;
+            color: #f0f0f0 !important;
+            margin: 0px 5px;
+            transition: 0.2s;
+        }
+
+        .button-bordered:hover {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+            transition: 0.2s;
+        }
+    }
+}
+
+/* Responsive rules */
+@media screen and (max-width: 850px) {
+    .navbar {
+        padding: 0;
+        background-color: inherit;
+    }
+    .is-active {
+        background-color: inherit;
+    }
+    .button-bordered {
         background-color: inherit;
     }
 }

@@ -1,5 +1,5 @@
 .hadiah {
-    background-image: url("../images/confetti-png-39103.png");
+    background-image: url('../images/confetti-png-39103.png');
     background-position: top right;
     background-size: cover;
     background-color: #0d0b13;
@@ -15,7 +15,6 @@
             color: white;
         }
     }
-
 }
 
 .hadiah-box {
@@ -30,16 +29,15 @@
         background-color: #17141d;
         color: #a1a1af;
         border-radius: 25px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.5);
         margin: 25px;
         text-align: center;
         padding: 25px;
         transition: 0.3s;
-
     }
 
     .box-hadiah:hover {
-
         transform: scale(1.1);
         transition: 0.3s;
     }

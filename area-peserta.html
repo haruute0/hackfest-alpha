@@ -6,57 +6,90 @@
 
 <!DOCTYPE html>
 <html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
+        <title>Area Peserta | UAJY Siloam Hackathon</title>
+        <meta
+            name="description"
+            content="UAJY Siloam Hackathon adalah lomba live coding 24 jam yang diselenggarakan oleh Himaforka."
+        />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Area Peserta | UAJY Siloam Hackathon</title>
-    <meta
-    name="description"
-    content="UAJY Siloam Hackathon adalah lomba live coding 24 jam yang diselenggarakan oleh Himaforka."
-/>    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <!-- CSS Framework -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- CSS Framework -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/area-peserta.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/area-peserta.css">
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css"
+            integrity="sha384-BCEeiNUiLzxxoeYaIu7jJqq0aVVz2O2Ig4WbWEmRQ2Dx/AAxNV1wMDBXyyrxw1Zd"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css"
+            integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ"
+            crossorigin="anonymous"
+        />
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+        ></script>
+    </head>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css" integrity="sha384-BCEeiNUiLzxxoeYaIu7jJqq0aVVz2O2Ig4WbWEmRQ2Dx/AAxNV1wMDBXyyrxw1Zd" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
-</head>
-
-<body>
-
-    <section class="section">
-        <div class="container">
-            <div class="box-uploader">
-
+    <body>
+        <section class="section">
+            <div class="container">
+                <div class="box-uploader">
                     <div class="title-area">
-                            <h1 class="title hero-title-big">Area Peserta <br />UAJY Siloam Hackathon</h1>
-                            <p>Selamat datang di area peserta, <strong>((email_ketua@gmail.com))</strong>. <a href="/">(Log Out)</a></a></p>
-                        </div>
+                        <h1 class="title hero-title-big">
+                            Area Peserta <br />UAJY Siloam Hackathon
+                        </h1>
+                        <p>
+                            Selamat datang di area peserta,
+                            <strong>((email_ketua@gmail.com))</strong>.
+                            <a href="/">(Log Out)</a>
+                        </p>
+                    </div>
 
-                        <h3 class="subtitle is-3 padding0">Uploader 1</h3>
-                        <h5 class="subtitle is-5">Scan/Foto Bukti Pembayaran Pendafataran</h5>
-                <div class="box">
-                        <p>Silahkan mengupload scan/foto bukti pembayaran pendaftaran.</p>
-    
+                    <h3 class="subtitle is-3 padding0">Uploader 1</h3>
+                    <h5 class="subtitle is-5">
+                        Scan/Foto Bukti Pembayaran Pendafataran
+                    </h5>
+                    <div class="box">
+                        <p>
+                            Silahkan mengupload scan/foto bukti pembayaran
+                            pendaftaran.
+                        </p>
+
                         <form name="upload-proposal" method="POST" netlify>
                             <div class="file has-name">
                                 <label class="file-label">
-                                    <input class="file-input" id="file" type="file" name="upload-proposal" required>
+                                    <input
+                                        class="file-input"
+                                        id="file"
+                                        type="file"
+                                        name="upload-proposal"
+                                        required
+                                    />
                                     <span class="file-cta">
-                                    <span class="file-icon">
-                                        <i class="fas fa-upload"></i>
-                                    </span>
-                                    <span class="file-label">
-                                        Choose a file…
-                                    </span>
+                                        <span class="file-icon">
+                                            <i class="fas fa-upload"></i>
+                                        </span>
+                                        <span class="file-label">
+                                            Choose a file…
+                                        </span>
                                     </span>
                                     <span class="file-name" id="filename">
                                         No File Chosen
@@ -64,34 +97,57 @@
                                 </label>
                             </div>
                             <div>
-                                <p>Format penamaan: <code>namasekolah_namatim.pdf</code></p>
+                                <p>
+                                    Format penamaan:
+                                    <code>namasekolah_namatim.pdf</code>
+                                </p>
                                 <p>Maximum size Unlimited. File type is pdf.</p>
                             </div>
                             <p>&nbsp;</p>
-                                <p><strong style="color: red !important;">Perhatian!</strong></p>
-                                <p>Apabila seluruh ketentuan yang diminta tidak memenuhi persyaratan karena salah/tidak lengkap, maka akan dianggap tidak terdaftar.</p>
+                            <p>
+                                <strong style="color: red !important;"
+                                    >Perhatian!</strong
+                                >
+                            </p>
+                            <p>
+                                Apabila seluruh ketentuan yang diminta tidak
+                                memenuhi persyaratan karena salah/tidak lengkap,
+                                maka akan dianggap tidak terdaftar.
+                            </p>
 
                             <div>
-                                <input class="button kirim" type="submit">
+                                <input class="button kirim" type="submit" />
                             </div>
                         </form>
-                    </div>    
+                    </div>
                     <h3 class="subtitle is-3 padding0">Uploader 2</h3>
-                        <h5 class="subtitle is-5">Proposal Lomba, Scan/Foto Surat Persetujuan dan KTM</h5>
+                    <h5 class="subtitle is-5">
+                        Proposal Lomba, Scan/Foto Surat Persetujuan dan KTM
+                    </h5>
                     <div class="box">
-                        <p>Silahkan mengunggah proposal lomba tim, scan/foto surat persetujuan dan KTM sebelum <strong>((PROPOSAL_DEADLINE))</strong></p>
-    
+                        <p>
+                            Silahkan mengunggah proposal lomba tim, scan/foto
+                            surat persetujuan dan KTM sebelum
+                            <strong>((PROPOSAL_DEADLINE))</strong>
+                        </p>
+
                         <form name="upload-proposal" method="POST" netlify>
                             <div class="file has-name">
                                 <label class="file-label">
-                                    <input class="file-input" id="file" type="file" name="upload-proposal" required>
+                                    <input
+                                        class="file-input"
+                                        id="file"
+                                        type="file"
+                                        name="upload-proposal"
+                                        required
+                                    />
                                     <span class="file-cta">
-                                    <span class="file-icon">
-                                        <i class="fas fa-upload"></i>
-                                    </span>
-                                    <span class="file-label">
-                                        Choose a file…
-                                    </span>
+                                        <span class="file-icon">
+                                            <i class="fas fa-upload"></i>
+                                        </span>
+                                        <span class="file-label">
+                                            Choose a file…
+                                        </span>
                                     </span>
                                     <span class="file-name" id="filename">
                                         No File Chosen
@@ -99,42 +155,75 @@
                                 </label>
                             </div>
                             <div>
-                                <p>Format penamaan:
-                                    <ol class="nama-uploader">
-                                        <li>Scan/Foto KTM Peserta: <code>namasekolah_namatim</code> dengan format <code>JPG/JPEG</code></li>
-                                        <li>Scan/Foto Surat Persetujuan dari Sekolah: <code>namasekolah_namatim</code> dengan format <code>PDF</code></li>
-                                        <li>File proposal: <code>IfestUAJY_I2C_namaaplikasi_namatim_namasekolah</code> dengan format <code>PDF</code></li>
-                                    </ol>
+                                Format penamaan:
+                                <ol class="nama-uploader">
+                                    <li>
+                                        Scan/Foto KTM Peserta:
+                                        <code>namasekolah_namatim</code> dengan
+                                        format <code>JPG/JPEG</code>
+                                    </li>
+                                    <li>
+                                        Scan/Foto Surat Persetujuan dari
+                                        Sekolah:
+                                        <code>namasekolah_namatim</code> dengan
+                                        format <code>PDF</code>
+                                    </li>
+                                    <li>
+                                        File proposal:
+                                        <code
+                                            >IfestUAJY_I2C_namaaplikasi_namatim_namasekolah</code
+                                        >
+                                        dengan format <code>PDF</code>
+                                    </li>
+                                </ol>
+
+                                <p>
+                                    Semua file dikompres kedalam file berformat
+                                    <code>ZIP</code> dengan format penamaan
+                                    <code>I2C19_namatim</code>
                                 </p>
-                                <p>Semua file dikompres kedalam file berformat <code>ZIP</code> dengan format penamaan <code>I2C19_namatim</code></p>
                                 <p>Maximum size Unlimited. File type is zip.</p>
                                 <p>&nbsp;</p>
-                                <p><strong style="color: red !important;">Perhatian!</strong></p>
-                                <p>Apabila seluruh ketentuan yang diminta tidak memenuhi persyaratan karena salah/tidak lengkap, maka akan dianggap tidak terdaftar.</p>
+                                <p>
+                                    <strong style="color: red !important;"
+                                        >Perhatian!</strong
+                                    >
+                                </p>
+                                <p>
+                                    Apabila seluruh ketentuan yang diminta tidak
+                                    memenuhi persyaratan karena salah/tidak
+                                    lengkap, maka akan dianggap tidak terdaftar.
+                                </p>
                             </div>
                             <div>
-                                <input class="button kirim" type="submit">
+                                <input class="button kirim" type="submit" />
                             </div>
                         </form>
-                    </div>    
+                    </div>
+                </div>
             </div>
-    </section>
-    <script>
-        var file = document.getElementById("file");
-        file.onchange = function(){
-            if(file.files.length > 0)
-            {
-                document.getElementById('filename').innerHTML = file.files[0].name;
+        </section>
+        <script>
+            var file = document.getElementById('file')
+            file.onchange = function() {
+                if (file.files.length > 0) {
+                    document.getElementById('filename').innerHTML =
+                        file.files[0].name
+                }
             }
-        };
-    </script>
-<footer class="footer" style="background-color: transparent;">
-        <div class="content has-text-centered">
-            <div class="footer__text">
-                <p class="login--ptext">&copy; 2018 - <a class="foot-link" href="https://ifest-uajy.com">IFEST#7</a> Sie. Sistem Informasi</p>
+        </script>
+        <footer class="footer" style="background-color: transparent;">
+            <div class="content has-text-centered">
+                <div class="footer__text">
+                    <p class="login--ptext">
+                        &copy; 2018 -
+                        <a class="foot-link" href="https://ifest-uajy.com"
+                            >IFEST#7</a
+                        >
+                        Sie. Sistem Informasi
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>

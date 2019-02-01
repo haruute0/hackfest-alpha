@@ -1,7 +1,5 @@
 .syarat-ketentuan-download {
-   
     .button-downloader {
-
         margin-top: 50px;
 
         display: flex;
@@ -14,7 +12,7 @@
             height: 60px;
             background-color: #fff;
             font-size: 1.2em;
-            border: 2px solid #EF233C;
+            border: 2px solid #ef233c;
             border-radius: 8px;
             display: inline-block;
             cursor: pointer;
@@ -36,23 +34,20 @@
                 color: #17141d;
                 font-size: 1.1em;
             }
-
         }
 
         button:hover {
-            background-color: #EF233C;
+            background-color: #ef233c;
 
             i,
             span {
-                color: #FFF;
+                color: #fff;
             }
         }
-
     }
 }
 
 .syarat-ketentuan {
-
     background-color: #f8f8f8;
 
     .items {
@@ -94,14 +89,13 @@
             display: block;
             margin-top: 0px;
             background: rgb(0, 0, 0);
-            transition: width .5s ease;
-            -webkit-transition: width .5s ease;
+            transition: width 0.5s ease;
+            -webkit-transition: width 0.5s ease;
         }
 
         li:hover:after {
             width: 10vw;
             background: rgb(0, 0, 0);
         }
-
     }
 }
