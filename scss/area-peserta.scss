@@ -8,21 +8,20 @@ body {
     background-color: #f8f8f8;
 }
 
-
-.box-uploader{
+.box-uploader {
     max-width: 700px !important;
     margin: 0 auto;
 }
 
-.title-area{
-    margin: 70px auto; 
+.title-area {
+    margin: 70px auto;
 }
 
-.padding0{
+.padding0 {
     margin-bottom: 5px !important;
 }
 
-.nama-uploader{
+.nama-uploader {
     margin-left: 30px;
 }
 
@@ -34,12 +33,12 @@ body {
     color: white !important;
 }
 
-.kirim:hover{
+.kirim:hover {
     background-color: #2b2b2b;
     transition: 0.3s;
 }
 
-.file{
+.file {
     margin: 20px auto;
 }
 
@@ -63,9 +62,7 @@ body {
 }
 
 .uploader {
-    
     margin: 0 20px;
-    margin-top: 50px;
     margin-bottom: 30px;
     h1 {
         font-weight: bold;
@@ -84,5 +81,53 @@ body {
     p {
         font-size: 1.5em;
         font-weight: bold;
+    }
+}
+
+.column-w {
+    min-width: 580px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.team-information {
+    margin-top: 10px;
+    h1 {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #494949;
+    }
+
+    .univ {
+        font-weight: bold;
+    }
+}
+
+.uploader-w {
+    padding: 0;
+}
+
+.logout-button {
+    margin: 20px auto;
+}
+
+.cont-area-peserta {
+    max-width: 800px;
+    margin: auto;
+}
+
+.logout-column {
+    right: 0;
+}
+
+.a {
+    padding-bottom: 0;
+}
+
+.navbar {
+    height: 80px;
+    .navbar-menu {
+        margin: auto 20vw;
     }
 }

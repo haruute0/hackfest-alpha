@@ -6796,7 +6796,6 @@ body {
 
 .uploader {
   margin: 0 20px;
-  margin-top: 50px;
   margin-bottom: 30px; }
   .uploader h1 {
     font-weight: bold;
@@ -6811,5 +6810,41 @@ body {
 .title-w p {
   font-size: 1.5em;
   font-weight: bold; }
+
+.column-w {
+  min-width: 580px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 40px; }
+
+.team-information {
+  margin-top: 10px; }
+  .team-information h1 {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #494949; }
+  .team-information .univ {
+    font-weight: bold; }
+
+.uploader-w {
+  padding: 0; }
+
+.logout-button {
+  margin: 20px auto; }
+
+.cont-area-peserta {
+  max-width: 800px;
+  margin: auto; }
+
+.logout-column {
+  right: 0; }
+
+.a {
+  padding-bottom: 0; }
+
+.navbar {
+  height: 80px; }
+  .navbar .navbar-menu {
+    margin: auto 20vw; }
 
 /*# sourceMappingURL=area-peserta.css.map */
