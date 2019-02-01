@@ -6755,7 +6755,8 @@ body {
 
 .warm-up {
   max-width: 800px;
-  margin: auto auto; }
+  margin: auto auto;
+  padding-bottom: 40px; }
   .warm-up--img {
     padding-top: 20px;
     max-width: 200px; }
@@ -6790,7 +6791,9 @@ body {
     text-align: center; }
   .warm-up {
     text-align: center;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .top-4--arrow {
+    display: none; } }
 
 .need-more-members {
   max-width: 400px;
@@ -6807,5 +6810,22 @@ body {
     margin: 10px auto; }
   .need-more-members .more-members-left {
     font-weight: bold; }
+
+.top-4 {
+  margin: 0 3vw;
+  padding: 0; }
+  .top-4 .columns {
+    margin: auto;
+    padding: 10px auto; }
+  .top-4 h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .top-4--img {
+    max-height: 80px;
+    margin: auto; }
+
+.top-4-arrow-img {
+  margin-top: 90px; }
 
 /*# sourceMappingURL=join.css.map */
