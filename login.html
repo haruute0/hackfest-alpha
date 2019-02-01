@@ -15,7 +15,7 @@
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
         <!-- Site Information -->
-        <title>Login ke Area Peserta| UAJY Siloam Hackathon</title>
+        <title>Login - UAJY Siloam Hackathon</title>
         <meta
             name="description"
             content="UAJY Siloam Hackathon adalah lomba live coding 24 jam yang diselenggarakan oleh Himaforka."
@@ -46,32 +46,27 @@
             defer
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
         ></script>
-
-        <!-- AOS -->
-        <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     </head>
 
     <body>
-        <section class="section">
+        <section class="section a">
             <div class="container">
                 <div class="columns is-centered is-vcentered is-mobile">
                     <div class="column is-narrow has-text-centered">
                         <div class="login-logo">
                             <img
                                 class="logo__small"
-                                src="/images/logo-UAJY Siloam Hackathon.png"
+                                src="images/iconmonstr-key-10-64.png"
                             />
                         </div>
-                        <h1 class="title">
-                            Area Peserta <br />UAJY Siloam Hackathon
-                        </h1>
-                        <p class="login--ptext">
-                            Selamat datang di area peserta UAJY Siloam Hackathon
-                        </p>
-                        <p class="login--ptext">
-                            Silahkan login untuk melanjutkan
-                        </p>
+                        <div class="login-w">
+                            <div class="login-w--title">
+                                <h1>Login</h1>
+                            </div>
+                            <div class="login-w--subtitle">
+                                <p>UAJY Siloam Hackathon</p>
+                            </div>
+                        </div>
                         <div class="login-control box">
                             <form
                                 class="form"
@@ -80,9 +75,7 @@
                                 netlify
                             >
                                 <div class="field">
-                                    <label class="label"
-                                        >Email Ketua Kelompok</label
-                                    >
+                                    <label class="label">Email Ketua Tim</label>
                                     <div class="control has-icons-left">
                                         <input
                                             class="input"
@@ -122,7 +115,7 @@
                                 <div>
                                     <p>
                                         Belum punya akun?
-                                        <a href="/pendaftaran.html"
+                                        <a href="pendaftaran.html"
                                             >Daftar disini</a
                                         >
                                     </p>
@@ -132,21 +125,26 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Delete when production -->
-            <div class="development">
-                <a href="/area-peserta.html">Skip Login</a>
-            </div>
-            <!-- Delete when production -->
-
-            <div class="foot">
-                <p class="login--ptext">
-                    &copy; 2018 -
-                    <a class="foot-link" href="https://ifest-uajy.com"
-                        >IFEST#7</a
-                    >
-                    Sie. Sistem Informasi
-                </p>
+        <section class="section footer-w">
+            <div class="container">
+                <div class="has-text-centered">
+                    <p style="vertical-align:middle">
+                        Made with
+                        <span
+                            style="color: #c51104; font-size: 1.5em; vertical-align:middle;"
+                            >❤</span
+                        >
+                        by <strong>Sie. Sistem Informasi</strong>. &copy; 2019
+                        <a
+                            href="https://ifest-uajy.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><strong>IFEST #7</strong></a
+                        >
+                    </p>
+                </div>
             </div>
         </section>
     </body>

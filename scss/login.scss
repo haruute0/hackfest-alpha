@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+@import '../node_modules/bulma/bulma.sass';
+
+html, body {
+    width: 100%;
+    background: #191b2a;
+    overflow: hidden;
+}
+
+/* Form */
+
+.field {
+    align-content: center;
+}
+
+.input {
+    max-width: 500px;
+    transition: 0.3s;
+}
+
+.input:focus {
+    box-shadow: #245ec6 !important;
+    transition: 0.3s;
+}
+
+/* Container */
+.section {
+    background-color: #191b2a;
+}
+
+.logo__small {
+    max-height: 80px;
+}
+
+.login-button {
+    width: 100px;
+    background-color: #245ec6;
+    transition: 0.3s;
+    color: white !important;
+    margin: 0 20px;
+}
+
+.login-button:hover {
+    background-color: #2b2b2b;
+    transition: 0.3s;
+}
+
+.login-control {
+    margin: 20px auto;
+
+    .box {
+        border-radius: 8px;
+        box-shadow: 4px 9px 40px 2px rgba(7, 16, 75, 0.1);
+    }
+}
+
+.login-logo {
+    margin-bottom: 20px;
+}
+
+/* Text Color */
+.login--ptext, h1 {
+    color: white !important;
+}
+
+label {
+    color: rgb(0, 0, 0) !important;
+}
+
+/* Development CSS */
+.development {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+/* Footnote */
+.foot {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.foot-link {
+    color: #ffffff !important;
+    transition: 0.3s;
+}
+
+.foot-link:hover {
+    color: #01a5e6 !important;
+    transition: 0.3s;
+}
+
+.footer-w {
+    color: #f8f8f8;
+    padding-top: 40px;   
+
+    strong {
+        color: #ffffff;
+    }
+}
+
+.a {
+    padding-bottom: 0;
+}
+
+.login-w {
+    &--title {
+        h1 {
+            font-weight: bold;
+            font-size: 2em;
+            color: #f8f8f8;
+        }
+    }
+
+    &--subtitle {
+        p {
+            color: #ffffff;
+            font-size: 1.2em;
+        }
+    }
+
+}

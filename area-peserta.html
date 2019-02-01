@@ -12,7 +12,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
-        <title>Area Peserta | UAJY Siloam Hackathon</title>
+        <title>Area Peserta - UAJY Siloam Hackathon</title>
         <meta
             name="description"
             content="UAJY Siloam Hackathon adalah lomba live coding 24 jam yang diselenggarakan oleh Himaforka."
@@ -53,9 +53,10 @@
             <div class="container">
                 <div class="box-uploader">
                     <div class="title-area">
-                        <h1 class="title hero-title-big">
-                            Area Peserta <br />UAJY Siloam Hackathon
-                        </h1>
+                        <div class="title-w">
+                            <h1>Area Peserta</h1>
+                            <p>UAJY Siloam Hackathon</p>
+                        </div>
                         <p>
                             Selamat datang di area peserta,
                             <strong>((email_ketua@gmail.com))</strong>.
@@ -63,10 +64,11 @@
                         </p>
                     </div>
 
-                    <h3 class="subtitle is-3 padding0">Uploader 1</h3>
-                    <h5 class="subtitle is-5">
-                        Scan/Foto Bukti Pembayaran Pendafataran
-                    </h5>
+                    <div class="uploader">
+                        <h1>Uploader Bukti Pembayaran</h1>
+                        <p>Scan/Foto Bukti Pembayaran</p>
+                    </div>
+
                     <div class="box">
                         <p>
                             Silahkan mengupload scan/foto bukti pembayaran
@@ -74,7 +76,7 @@
                         </p>
 
                         <form name="upload-proposal" method="POST" netlify>
-                            <div class="file has-name">
+                            <div class="file is-boxed has-name is-centered">
                                 <label class="file-label">
                                     <input
                                         class="file-input"
@@ -120,10 +122,14 @@
                             </div>
                         </form>
                     </div>
-                    <h3 class="subtitle is-3 padding0">Uploader 2</h3>
-                    <h5 class="subtitle is-5">
-                        Proposal Lomba, Scan/Foto Surat Persetujuan dan KTM
-                    </h5>
+
+                    <div class="uploader">
+                        <h1>Uploader 2</h1>
+                        <p>
+                            Proposal Lomba, Scan/Foto Surat Persetujuan dan KTM
+                        </p>
+                    </div>
+
                     <div class="box">
                         <p>
                             Silahkan mengunggah proposal lomba tim, scan/foto
@@ -132,7 +138,7 @@
                         </p>
 
                         <form name="upload-proposal" method="POST" netlify>
-                            <div class="file has-name">
+                            <div class="file is-boxed has-name is-centered">
                                 <label class="file-label">
                                     <input
                                         class="file-input"
@@ -212,18 +218,25 @@
                 }
             }
         </script>
-        <footer class="footer" style="background-color: transparent;">
-            <div class="content has-text-centered">
-                <div class="footer__text">
-                    <p class="login--ptext">
-                        &copy; 2018 -
-                        <a class="foot-link" href="https://ifest-uajy.com"
-                            >IFEST#7</a
+        <section class="section footer-w">
+            <div class="container">
+                <div class="has-text-centered">
+                    <p style="vertical-align:middle">
+                        Made with
+                        <span
+                            style="color: #c51104; font-size: 1.5em; vertical-align:middle;"
+                            >❤</span
                         >
-                        Sie. Sistem Informasi
+                        by <strong>Sie. Sistem Informasi</strong>. &copy; 2019
+                        <a
+                            href="https://ifest-uajy.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><strong>IFEST #7</strong></a
+                        >
                     </p>
                 </div>
             </div>
-        </footer>
+        </section>
     </body>
 </html>

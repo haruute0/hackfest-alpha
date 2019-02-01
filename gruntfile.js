@@ -13,6 +13,8 @@ module.exports = function(grunt) {
                 files: [
                     { src: 'css/hackathon.css', dest: 'css/hackathon.css' },
                     { src: 'css/join.css', dest: 'css/join.css' },
+                    { src: 'css/login.css', dest: 'css/lohin.css' },
+                    { src: 'css/area-peserta.css', dest: 'css/area-peserta.css' },
                 ],
             },
         },
@@ -29,6 +31,8 @@ module.exports = function(grunt) {
                 files: {
                     'css/hackathon.css': 'scss/hackathon.scss',
                     'css/join.css': 'scss/join.scss',
+                    'css/login.css': 'scss/login.scss',
+                    'css/area-peserta.css': 'scss/area-peserta.scss'
                 },
             },
         },
