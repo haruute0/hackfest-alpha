@@ -62,8 +62,6 @@ body {
 }
 
 .uploader {
-    margin: 0 20px;
-    margin-bottom: 30px;
     h1 {
         font-weight: bold;
         font-size: 2em;
@@ -125,9 +123,115 @@ body {
     padding-bottom: 0;
 }
 
-.navbar {
-    height: 80px;
-    .navbar-menu {
-        margin: auto 20vw;
+.inside {
+    max-width: 700px;
+    margin: auto;
+}
+
+.topbar {
+    background-color: #245ec6;
+    clear: both;
+
+    &--container {
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    &--teaminfo {
+        padding-top: 10px;
+        margin-bottom: 20px;
+        color: #cfcfcf;
+        display: table;
+
+        h1 {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .univ {
+            font-weight: bold;
+        }
+
+        &--avatar {
+            padding-right: 30px;
+            display: table-cell;
+            vertical-align: middle;
+            img {
+                height: 64px;
+            }
+        }
+
+        &--info {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    &--title {
+        padding-top: 30px;
+
+        h1 {
+            font-weight: bold;
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 1.5em;
+            color: #cccccc;
+        }
+    }
+}
+
+.trans {
+    background-color: #245ec6;
+    height: 30vh;
+}
+
+.content {
+    margin: auto;
+    margin-top: -30vh;
+    .box {
+        max-width: 750px;
+    }
+
+    .spacer {
+        margin: auto 80px;
+    }
+}
+
+.logout-btn {
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 40px;
+    height: 100px;
+    background: rgb(0, 11, 41);
+    color: rgb(173, 173, 173);
+    z-index: 15;
+    border-radius: 3px 0px 0px 3px;
+
+    a {
+        margin: auto 10px;
+        margin-top: 20px;
+        writing-mode: tb-rl;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .inside {
+        margin: auto 80px;
     }
 }

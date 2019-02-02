@@ -2,7 +2,8 @@
 
 @import '../node_modules/bulma/bulma.sass';
 
-html, body {
+html,
+body {
     width: 100%;
     background: #191b2a;
     overflow: hidden;
@@ -60,7 +61,8 @@ html, body {
 }
 
 /* Text Color */
-.login--ptext, h1 {
+.login--ptext,
+h1 {
     color: white !important;
 }
 
@@ -94,7 +96,7 @@ label {
 
 .footer-w {
     color: #f8f8f8;
-    padding-top: 40px;   
+    padding-top: 40px;
 
     strong {
         color: #ffffff;
@@ -120,5 +122,4 @@ label {
             font-size: 1.2em;
         }
     }
-
 }

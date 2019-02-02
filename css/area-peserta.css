@@ -6794,13 +6794,10 @@ body {
   border: solid 1px #e8e8e8;
   background: #fff; }
 
-.uploader {
-  margin: 0 20px;
-  margin-bottom: 30px; }
-  .uploader h1 {
-    font-weight: bold;
-    font-size: 2em;
-    padding-bottom: 5px; }
+.uploader h1 {
+  font-weight: bold;
+  font-size: 2em;
+  padding-bottom: 5px; }
 
 .title-w h1 {
   font-size: 3em;
@@ -6842,9 +6839,82 @@ body {
 .a {
   padding-bottom: 0; }
 
-.navbar {
-  height: 80px; }
-  .navbar .navbar-menu {
-    margin: auto 20vw; }
+.inside {
+  max-width: 700px;
+  margin: auto; }
+
+.topbar {
+  background-color: #245ec6;
+  clear: both; }
+  .topbar--container {
+    margin: auto;
+    padding-bottom: 30px; }
+  .topbar--teaminfo {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: #cfcfcf;
+    display: table; }
+    .topbar--teaminfo h1 {
+      font-size: 1.2em;
+      font-weight: bold; }
+    .topbar--teaminfo .univ {
+      font-weight: bold; }
+    .topbar--teaminfo--avatar {
+      padding-right: 30px;
+      display: table-cell;
+      vertical-align: middle; }
+      .topbar--teaminfo--avatar img {
+        height: 64px; }
+    .topbar--teaminfo--info {
+      display: table-cell;
+      vertical-align: middle; }
+  .topbar--title {
+    padding-top: 30px; }
+    .topbar--title h1 {
+      font-weight: bold;
+      font-size: 2em;
+      color: #ffffff; }
+    .topbar--title p {
+      font-weight: 500;
+      font-size: 1.5em;
+      color: #cccccc; }
+
+.trans {
+  background-color: #245ec6;
+  height: 30vh; }
+
+.content {
+  margin: auto;
+  margin-top: -30vh; }
+  .content .box {
+    max-width: 750px; }
+  .content .spacer {
+    margin: auto 80px; }
+
+.logout-btn {
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 40px;
+  height: 100px;
+  background: #000b29;
+  color: #adadad;
+  z-index: 15;
+  border-radius: 3px 0px 0px 3px; }
+  .logout-btn a {
+    margin: auto 10px;
+    margin-top: 20px;
+    writing-mode: tb-rl;
+    text-decoration: none; }
+  .logout-btn a:hover {
+    color: #fff; }
+  .logout-btn a:visited {
+    text-decoration: none; }
+
+@media screen and (max-width: 950px) {
+  .inside {
+    margin: auto 80px; } }
 
 /*# sourceMappingURL=area-peserta.css.map */
