@@ -212,7 +212,7 @@
   padding: 0; }
   .hackathon-title .hackathon {
     font-family: 'minecrafterregular';
-    font-size: 10.5vw;
+    font-size: 9em;
     font-style: italic;
     line-height: 0.6;
     text-align: center;
@@ -221,7 +221,7 @@
     font-family: 'AGENCYB', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 8vw;
+    font-size: 7em;
     letter-spacing: 10px;
     font-style: italic;
     text-align: center;
@@ -230,7 +230,7 @@
     font-family: 'AGENCYB', sans-serif;
     font-style: italic;
     font-weight: normal;
-    font-size: 5vw;
+    font-size: 5em;
     text-align: center;
     text-indent: 3rem;
     color: #f8f8f8; }
