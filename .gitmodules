@@ -7,3 +7,6 @@
 [submodule "js/smooth-scroll"]
 	path = js/smooth-scroll
 	url = https://github.com/cferdinandi/smooth-scroll.git
+[submodule "js/particles.js"]
+	path = js/particles.js
+	url = https://github.com/marcbruederlin/particles.js.git

@@ -6746,7 +6746,8 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-html, body {
+html,
+body {
   width: 100%;
   background: #191b2a;
   overflow: hidden; }
@@ -6791,7 +6792,8 @@ html, body {
   margin-bottom: 20px; }
 
 /* Text Color */
-.login--ptext, h1 {
+.login--ptext,
+h1 {
   color: white !important; }
 
 label {

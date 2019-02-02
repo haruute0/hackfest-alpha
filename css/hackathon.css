@@ -207,6 +207,7 @@
   height: 80px; }
 
 .hackathon-title {
+  z-index: 99;
   margin: 0;
   padding: 0; }
   .hackathon-title .hackathon {
@@ -235,7 +236,6 @@
     color: #f8f8f8; }
 
 .hero-here {
-  background-color: #000;
   min-height: 100vh;
   position: relative; }
   .hero-here .scrollmore {
@@ -256,6 +256,14 @@
       color: #f8f8f8; }
       .hero-here .hero-here-container .sub-quotation a {
         text-decoration: none; }
+
+.background {
+  background-color: #000;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1; }
 
 /*!
     Title: Vertical-Timeline
@@ -471,6 +479,43 @@
     background-color: inherit; }
   .button-bordered {
     background-color: inherit; } }
+
+.button--container {
+  font-family: 'Mukta', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em; }
+  .button--container button {
+    height: 70px;
+    width: 250px;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 30px;
+    border: 0;
+    border-radius: 40px;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: inherit;
+    font-family: inherit;
+    transition: all 0.25s ease; }
+  .button--container button:hover {
+    background-color: #2064e2;
+    border: 0;
+    color: #fff;
+    transition: all 0.25s ease; }
+
+.alt-button-text {
+  color: #f0f0f0;
+  font-size: 1.25rem;
+  font-family: 'Encode Sans', sans-serif; }
+
+.join {
+  background: #0d1b33; }
 
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
