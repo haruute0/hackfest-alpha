@@ -123,23 +123,7 @@
     }
 
     button {
-        border: none;
-        border-radius: 16px;
-        background-color: #023b70;
-        height: 50px;
-        margin-top: 20px;
-        margin-bottom: 5px;
-        padding: 5px 20px;
-        font-size: 1.2em;
-        color: #eee;
-        transition: 0.3s ease;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #eee;
-        color: #023b70;
-        transition: 0.3s ease;
+        margin-top: 10px;
     }
 }
 
