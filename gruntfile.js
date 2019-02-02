@@ -5,7 +5,15 @@ module.exports = function(grunt) {
     grunt.initConfig({
         uncss: {
             dist: {
-                files: [{ src: 'index.html', dest: 'css/hackathon.css' }],
+                options : {
+                    ignore : ['canvas', '.background']
+                },
+                files: [
+                    { src: 'index.html', dest: 'css/hackathon.css' },
+                    { src: 'login.html', dest: 'css/login.css' },
+                    { src: 'area-peserta.html', dest: 'css/area-peserta.css' },
+                    { src: 'pendaftaran.html', dest: 'css/join.css' }
+                ]
             },
         },
         cssmin: {
@@ -13,7 +21,7 @@ module.exports = function(grunt) {
                 files: [
                     { src: 'css/hackathon.css', dest: 'css/hackathon.css' },
                     { src: 'css/join.css', dest: 'css/join.css' },
-                    { src: 'css/login.css', dest: 'css/lohin.css' },
+                    { src: 'css/login.css', dest: 'css/login.css' },
                     { src: 'css/area-peserta.css', dest: 'css/area-peserta.css' },
                 ],
             },
