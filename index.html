@@ -41,67 +41,8 @@
             href="https://the-unnamed-hackathon-preview.vriyas.com"
         />
 
-        <!-- CSS Section (Put all css here before loading the JSes) -->
+        <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/hackathon.css" />
-
-        <!-- JavaScript for the website, ensure better experience -->
-
-        <script
-            type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="js/novacancy.js/javascript/jquery.novacancy.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="js/vertical-timeline/dist/vertical-timeline.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="js/smooth-scroll/dist/smooth-scroll.polyfills.min.js"
-        ></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('.hackathon').novacancy({
-                    blink: 2,
-                    off: 1,
-                    color: 'Red',
-                    glow: [
-                        '0 0 80px Red',
-                        '0 0 30px FireBrick',
-                        '0 0 6px DarkRed',
-                    ],
-                })
-                $('.timeline-container').verticalTimeline({
-                    startLeft: false,
-                    alternate: true,
-                    arrows: false,
-                })
-            })
-        </script>
-        <script>
-            var scroll = new SmoothScroll('a[href*="#"]', {
-                offset: 58,
-            })
-        </script>
-        <script>
-            $(document).ready(function() {
-                // Check for click events on the navbar burger icon
-                $('.navbar-burger').click(function() {
-                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    $('.navbar-burger').toggleClass('is-active')
-                    $('.navbar-menu').toggleClass('is-active')
-                })
-
-                $('.navbar-item').click(function() {
-                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    $('.navbar-burger').removeClass('is-active')
-                    $('.navbar-menu').removeClass('is-active')
-                })
-            })
-        </script>
     </head>
 
     <body>
@@ -553,14 +494,71 @@
                 </div>
             </div>
         </section>
+        <script
+            type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/novacancy.js/javascript/jquery.novacancy.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/vertical-timeline/dist/vertical-timeline.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/smooth-scroll/dist/smooth-scroll.polyfills.min.js"
+        ></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.hackathon').novacancy({
+                    blink: 2,
+                    off: 1,
+                    color: 'Red',
+                    glow: [
+                        '0 0 80px Red',
+                        '0 0 30px FireBrick',
+                        '0 0 6px DarkRed',
+                    ],
+                })
+                $('.timeline-container').verticalTimeline({
+                    startLeft: false,
+                    alternate: true,
+                    arrows: false,
+                })
+            })
+        </script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                offset: 58,
+            })
+        </script>
+        <script>
+            $(document).ready(function() {
+                // Check for click events on the navbar burger icon
+                $('.navbar-burger').click(function() {
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    $('.navbar-burger').toggleClass('is-active')
+                    $('.navbar-menu').toggleClass('is-active')
+                })
+
+                $('.navbar-item').click(function() {
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    $('.navbar-burger').removeClass('is-active')
+                    $('.navbar-menu').removeClass('is-active')
+                })
+            })
+        </script>
         <script src="js/particles.js/dist/particles.min.js"></script>
         <script type="text/javascript">
-        window.onload = function() {
-  Particles.init({
-    selector: '.background',
-  color: ['#DA0463', '#404B69', '#DBEDF3'],
-  connectParticles: true
-  });
-};</script>
+            window.onload = function() {
+                Particles.init({
+                    selector: '.background',
+                    color: ['#DA0463', '#404B69', '#DBEDF3'],
+                    connectParticles: true,
+                })
+            }
+        </script>
     </body>
 </html>
