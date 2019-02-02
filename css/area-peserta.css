@@ -6888,8 +6888,6 @@ body {
   margin-top: -30vh; }
   .content .box {
     max-width: 750px; }
-  .content .spacer {
-    margin: auto 80px; }
 
 .logout-btn {
   position: fixed;
@@ -6913,8 +6911,18 @@ body {
   .logout-btn a:visited {
     text-decoration: none; }
 
+@media screen and (min-width: 960px) {
+  .spacer {
+    margin: auto 80px; } }
+
 @media screen and (max-width: 950px) {
   .inside {
     margin: auto 80px; } }
+
+@media screen and (max-width: 750px) {
+  .inside {
+    margin: auto 40px; }
+  .spacer {
+    margin: 20px; } }
 
 /*# sourceMappingURL=area-peserta.css.map */

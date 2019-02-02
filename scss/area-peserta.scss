@@ -195,10 +195,6 @@ body {
     .box {
         max-width: 750px;
     }
-
-    .spacer {
-        margin: auto 80px;
-    }
 }
 
 .logout-btn {
@@ -230,8 +226,23 @@ body {
     }
 }
 
+@media screen and (min-width: 960px) {
+    .spacer {
+        margin: auto 80px;
+    }
+}
+
 @media screen and (max-width: 950px) {
     .inside {
         margin: auto 80px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .inside {
+        margin: auto 40px;
+    }
+    .spacer {
+        margin: 20px;
     }
 }
