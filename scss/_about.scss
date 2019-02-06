@@ -19,15 +19,33 @@
         color: rgb(255, 255, 255);
     }
 
-    p {
-        color: #bebebe;
+    p, strong {
+        color: #ddd;
     }
 
     .column-s {
-        background-color: rgba($color: #000000, $alpha: 0.3);
+        background-color: rgba($color: #000000, $alpha: 0.8);
         border-radius: 8px;
         margin: 10px 30px;
         padding: 15px 25px;
-        box-shadow: 4px 9px 40px 2px rgba(7, 16, 75, 0.1);
+        box-shadow: 4px 9px 40px 2px rgba(255, 255, 255, 0.1);
+
+        p {
+            margin-bottom: 5px;
+        }
+
+        .title-s {
+            font-weight: 500;
+            color: #ddd;
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .subtitle-s {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+            font-size: 2em;
+        }
     }
 }

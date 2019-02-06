@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Teko");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 @import url("https://fonts.googleapis.com/css?family=Mukta:700");
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -7077,14 +7078,26 @@ a.navbar-item,
   .about h1 {
     margin-bottom: 20px;
     color: white; }
-  .about p {
-    color: #bebebe; }
+  .about p, .about strong {
+    color: #ddd; }
   .about .column-s {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
     margin: 10px 30px;
     padding: 15px 25px;
-    box-shadow: 4px 9px 40px 2px rgba(7, 16, 75, 0.1); }
+    box-shadow: 4px 9px 40px 2px rgba(255, 255, 255, 0.1); }
+    .about .column-s p {
+      margin-bottom: 5px; }
+    .about .column-s .title-s {
+      font-weight: 500;
+      color: #ddd;
+      margin-bottom: 5px;
+      font-size: 1.2em; }
+    .about .column-s .subtitle-s {
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 5px;
+      font-size: 2em; }
 
 .footer-w {
   margin-top: -50px;
@@ -7141,7 +7154,7 @@ a.navbar-item,
   margin: 0;
   padding: 0; }
   .hackathon-title .hackathon {
-    font-family: 'minecrafterregular';
+    font-family: 'Bowlby One SC', cursive;
     font-style: italic;
     line-height: 0.6;
     text-align: center;
@@ -7193,7 +7206,7 @@ a.navbar-item,
 
 @media screen and (min-width: 1201px) {
   .hackathon {
-    font-size: 148px; }
+    font-size: 128px; }
   .uajy {
     font-size: 90px; }
   .ifest {
@@ -7201,7 +7214,7 @@ a.navbar-item,
 
 @media screen and (max-width: 1200px) {
   .hackathon {
-    font-size: 13.3vw; }
+    font-size: 12.3vw; }
   .uajy {
     font-size: 8vw;
     margin-bottom: 10px; }
