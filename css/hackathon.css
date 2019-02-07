@@ -1,12 +1,16 @@
 @import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
 @import url("https://use.fontawesome.com/releases/v5.6.3/css/brands.css");
-/*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 @import url("https://fonts.googleapis.com/css?family=Bitter|Staatliches");
 @import url("https://fonts.googleapis.com/css?family=Encode+Sans");
 @import url("https://fonts.googleapis.com/css?family=Teko");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 @import url("https://fonts.googleapis.com/css?family=Mukta:700");
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
+.is-disable-w {
+  pointer-events: none;
+  opacity: .65; }
+
+/*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -6946,6 +6950,11 @@ a.navbar-item,
   font-family: 'AGENCYB';
   src: url("../fonts/AGENCYB.woff") format("woff"); }
 
+.fasilitas {
+  background-color: #f8f8f8; }
+  .fasilitas img {
+    height: 80px; }
+
 .syarat-ketentuan-download .button-downloader {
   margin-top: 50px;
   display: flex;
@@ -7070,6 +7079,8 @@ a.navbar-item,
   background-size: cover;
   min-height: 100vh;
   color: #f0f0f0; }
+  .about .image-bottom {
+    margin-top: 5vh; }
   .about .container {
     padding-top: 80px; }
   .about .section-title {
