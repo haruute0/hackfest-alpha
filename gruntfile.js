@@ -67,4 +67,5 @@ module.exports = function(grunt) {
     // Default tasks.
     grunt.registerTask('default', ['browserSync', 'watch'])
     grunt.registerTask('build', ['sass', 'uncss', 'cssmin'])
+    grunt.registerTask('ftp-build', ['sass', 'cssmin'])
 }

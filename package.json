@@ -1,17 +1,17 @@
 {
-    "name": "hackfest",
+    "name": "uajy-siloam-hackathon",
     "version": "1.0.0",
     "main": "index.js",
-    "license": "ISC",
     "scripts": {
         "css-build": "node-sass --omit-source-map-url scss/ -o css/",
         "css-build-minify": "node-sass --omit-source-map-url scss/ -o css/ --output-style compressed",
         "css-watch": "yarn run css-build -- --watch",
         "start": "yarn run css-watch",
-        "delete-cache": "rm -rf css/",
+        "delete-css-prev-build": "rm -rf css/",
         "netlify-deploy": "grunt build",
         "unch": "grunt",
-        "compress": "grunt imagemin"
+        "compress": "grunt imagemin",
+        "ftp-build": "grunt ftp-build"
     },
     "private": true,
     "dependencies": {
